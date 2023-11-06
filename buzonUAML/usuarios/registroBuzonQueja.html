@@ -63,7 +63,18 @@
 
                             </ul>
                         </div>
-                        <a class="navbar-brand" href="http://www.ler.uam.mx/es/Micrositios_UAML/BienestarUAML" target="_blank">
+                        <a class="navbar-brand" href="../documentos/ficha.docx" target="_blank">
+                            <button class="btn btn-primary" type="button">
+                                Ficha primera cita
+                            </button>
+                        </a>
+                        <a class="navbar-brand" href="../documentos/formatoQueja.docx" target="_blank">
+                            <button class="btn btn-primary" type="button">
+                                Formato de queja
+                            </button>
+                        </a>
+                        <a class="navbar-brand" href="http://www.ler.uam.mx/es/Micrositios_UAML/BienestarUAML"
+                            target="_blank">
                             <button class="btn btn-primary" type="button">
                                 Más información
                             </button>
@@ -130,12 +141,14 @@
                 <div class="col-md-4 g-3 mb-5">
                     <strong class="form-label">DATOS DE CONTACTO DE LA PERSONA QUE REALIZA EL REGISTRO</strong><br />
 
-                    <label for="nombre" class="form-label mt-3">Email: <div class="fst-italic">(Capturar sólo si desea
+                    <label for="nombre" class="form-label mt-3 fw-bold">Email: <div class="fst-italic fw-lighter">
+                            (Capturar sólo si desea
                             notificación en
                             un correo distinto al institucional)</div></label>
                     <input type="tel" class="form-control" id="email" placeholder="Email">
 
-                    <label for="telefono" class="form-label mt-3">Teléfono: <div class="fst-italic">(opcional)</div>
+                    <label for="telefono" class="form-label mt-3 fw-bold">Teléfono: <div class="fst-italic fw-lighter">
+                            (opcional)</div>
                     </label>
                     <input type="tel" class="form-control" id="telefono" placeholder="Tel&eacute;fono">
 
@@ -143,31 +156,43 @@
                 <div class="col-md-4 g-3">
                     <strong class="form-label">PERSONA A LA QUE SEÑALA COMO RESPONSABLE</strong><br />
 
-                    <label for="nombre" class="form-label mt-3">Nombre:</label>
+                    <label for="nombre" class="form-label mt-3 fw-bold">Nombre:</label>
                     <input type="text" class="form-control" id="nombre" placeholder="Nombre">
 
-                    <label for="cargo" class="form-label mt-3">Cargo:</label>
+                    <label for="cargo" class="form-label mt-3 fw-bold">Cargo:</label>
                     <input type="text" class="form-control" id="cargo" placeholder="Cargo">
 
-                    <label for="dependencia" class="form-label mt-3">Dependencia:</label>
+                    <label for="dependencia" class="form-label mt-3 fw-bold">Dependencia:</label>
                     <input type="text" class="form-control" id="dependencia" placeholder="Dependencia">
 
                 </div>
                 <div class="col-md-4 g-3">
                     <strong class="form-label">MOTIVO DE LA QUEJA</strong>
 
-                    <label for="mensaje" class="form-label mt-3"><span class="fst-italic">Exponga el problema,
+                    <label for="mensaje" class="form-label mt-3 fw-bold"><span class="fst-italic fw-lighter">Exponga el
+                            problema,
                             circunstancias y datos
                             pertinentes de
                             modo, tiempo y lugar, en orden cronológico y de manera concisa.</span><br /><br />
                         Me permito someter a su consideración los siguientes hechos:
                     </label>
                     <textarea class="form-control" id="mensaje" rows="3"></textarea>
-                    <input type="checkbox" id="proteccion" /> <label for="proteccion" class="form-label mt-3">Solicito
+                    <span class="fst-italic fw-lighter link-warning">En la aplicación definitiva este campo se expandirá
+                        verticalmente conforme el usuario vaya capturando texto</span>
+                        <br/><input type="checkbox" id="proteccion" /> <label for="proteccion"
+                        class="form-label mt-3 fw-bold">Solicito
                         medidas urgentes de protección</label>
+                    <div class="form-group">
+                        <label for="mensaje" class="form-label mt-3 fw-bold">Emails adicionales para notificaciones:<div
+                                class="fst-italic fw-lighter">(Llenar sólo si se desea notificar a personas adicionales
+                                a la persona titular de la <span class="link-primary">Coordinación de Bienestar Universitario y Género</span> y la <span class="link-primary">persona que registra</span>)</div></label>
+                        <textarea class="form-control" id="mensaje" rows="2">abc@correo.ler.uam.mx, cde@correo.ler.uam.mx,
+efg@correo.ler.uam.mx
+                            </textarea>
+                    </div>
                 </div>
 
-                <div class="row m-0">
+                <div class="row mt-5">
                     <HR>
 
                     <h4 class="fst-italic" style="text-align: center;">AVISO DE CONFIDENCIALIDAD</h4>
@@ -218,7 +243,7 @@
                 <p>Universidad Autonoma Metropolitana Unidad Lerma,
                     Avenida de las Granjas #123, col. El panteón </p>
             </div>
-            
+
         </div>
     </div>
     </div>

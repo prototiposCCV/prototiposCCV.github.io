@@ -62,6 +62,16 @@
 
                             </ul>
                         </div>
+                        <a class="navbar-brand" href="../documentos/ficha.docx" target="_blank">
+                            <button class="btn btn-primary" type="button">
+                                Ficha primera cita
+                            </button>
+                        </a>
+                        <a class="navbar-brand" href="../documentos/formatoQueja.docx" target="_blank">
+                            <button class="btn btn-primary" type="button">
+                                Formato de queja
+                            </button>
+                        </a>
                         <a class="navbar-brand" href="http://www.ler.uam.mx/es/Micrositios_UAML/BienestarUAML" target="_blank">
                             <button class="btn btn-primary" type="button">
                                 Más información
@@ -131,10 +141,10 @@
                                     DATOS DE CONTACTO
                                 </div>
 
-                                <label for="nombre" class="form-label mt-3">Email: <div class="fst-italic">(Capturar
+                                <label for="nombre" class="form-label mt-3 fw-bold">Email: <div class="fst-italic fw-lighter">(Capturar
                                         sólo si desea notificación en un correo distinto al institucional)</div></label>
                                 <input type="email" class="form-control" id="email" placeholder="Email">
-                                <label for="telefono" class="form-label mt-3">Teléfono: <div class="fst-italic">
+                                <label for="telefono" class="form-label mt-3 fw-bold">Teléfono: <div class="fst-italic fw-lighter">
                                         (opcional)</div></label>
                                 <input type="tel" class="form-control" id="telefono" placeholder="Tel&eacute;fono">
 
@@ -150,17 +160,17 @@
                                         18:00 hrs.)
                                     </div>
                                 </div>
-                                <label for="opt1" class="form-label mt-3">Sesión 1: Día y hora propuesta</label>
+                                <label for="opt1" class="form-label mt-3 fw-bold">Sesión 1: Día y hora propuesta<sup style="color: red; font-size: small;">*</sup></label>
                                 <input type="datetime-local" class="form-control" id="opt1" placeholder="Opción 1"
                                     value="2023-10-24 17:30">
 
-                                <label for="opt2" class="form-label mt-3">Sesión 2: Día y hora propuesta</label>
+                                <label for="opt2" class="form-label mt-3 fw-bold">Sesión 2: Día y hora propuesta<sup style="color: red; font-size: small;">*</sup></label>
                                 <input type="datetime-local" class="form-control" id="opt2" placeholder="Opción 2">
 
-                                <label for="opt3" class="form-label mt-3">Sesión 3: Día y hora propuesta</label>
+                                <label for="opt3" class="form-label mt-3 fw-bold">Sesión 3: Día y hora propuesta<sup style="color: red; font-size: small;">*</sup></label>
                                 <input type="datetime-local" class="form-control mb-5" id="opt3" placeholder="Opción 3">
                             </div>
-                            <div class="col-md-4 g-3">
+                            <div class="col-md-4 g-3 mb-5">
                                 <div class="fw-bold form-label">
                                     MOTIVO DE LA CONSULTA<br />
                                     <div class="fst-italic fw-lighter">
@@ -168,7 +178,15 @@
                                     </div>
                                 </div>
                                 <textarea class="form-control" id="mensaje" rows="6"></textarea>
+                                <span class="fst-italic fw-lighter link-warning">En la aplicación definitiva este campo se expandirá verticalmente conforme el usuario vaya capturando texto</span>
+                                <div class="form-group">
+                                    <label for="mensaje" class="form-label mt-3 fw-bold">Emails adicionales para notificaciones:<div class="fst-italic fw-lighter">(Llenar sólo si se desea notificar a personas adicionales a la persona titular de la <span class="link-primary">Oficina de Proyectos Integrales para el Bienestar Universitario</span> y la <span class="link-primary">persona que registra</span>)</div></label>
+                                    <textarea class="form-control" id="mensaje" rows="2">abc@correo.ler.uam.mx, cde@correo.ler.uam.mx,
+efg@correo.ler.uam.mx
+                                    </textarea>
+                                </div>
                             </div>
+
                             <HR>
 
                             <h4 class="fst-italic" style="text-align: center;">AVISO DE CONFIDENCIALIDAD</h4>

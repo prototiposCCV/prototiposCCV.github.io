@@ -65,9 +65,6 @@
                                     </ul>
                                 </li>
 								 <li class="nav-item dropdown">
-                                     <a class="nav-link " href="../usuarios/seguimientoRegistros.html" role="button" >Seguimiento de registro</a>                                   
-                                </li>
-								 <li class="nav-item dropdown">
                                      <a class="nav-link " href="./seguimientoRegistrosAdmon.html" role="button" >Seguimiento de registro (Admón)</a>                                   
                                 </li>
                                 <li class="nav-item dropdown">
@@ -76,6 +73,16 @@
                                 </li>
                             </ul>
                         </div>
+                        <a class="navbar-brand" href="../documentos/ficha.docx" target="_blank">
+                            <button class="btn btn-primary" type="button">
+                                Ficha primera cita
+                            </button>
+                        </a>
+                        <a class="navbar-brand" href="../documentos/formatoQueja.docx" target="_blank">
+                            <button class="btn btn-primary" type="button">
+                                Formato de queja
+                            </button>
+                        </a>
                         <a class="navbar-brand" href="http://www.ler.uam.mx/es/Micrositios_UAML/BienestarUAML" target="_blank">
                             <button class="btn btn-primary" type="button">
                                 Más información
@@ -90,16 +97,16 @@
             <div class="container p-0">
                 <div class="row m-0">
                     <div class="col-md-12">
-                        <h4 class="alt-font text-black text-center  letter-spacing-minus-1px margin-5px-bottom">
+                        <h4 class="alt-font text-black text-center letter-spacing-minus-1px margin-5px-bottom">
                             FORMULARIO DE BÚSQUEDA</h2>
                         <form class="row g-3 align-items-start">
 
                             <div class="col-md-6">
-                                <label for="folio" class="form-label">Folio</label>
+                                <label for="folio" class="form-label fw-bold">Folio:</label>
                                 <input type="text" class="form-control" size="8" id="nombre" placeholder="Folio">
                             </div>
                             <div class="col-md-6">
-                                <label for="tipo" class="form-label">Tipo</label>
+                                <label for="tipo" class="form-label fw-bold">Tipo:</label>
                                 <select class="form-select form-control" required id="tipo">
                                     <option>--</option>
                                     <option>Comentario, sugerencia u otro</option>
@@ -108,7 +115,7 @@
                                 </select>
                             </div>
                             <div class="col-md-6">
-                                <label for="trimestre" class="form-label">Trimestre</label>
+                                <label for="trimestre" class="form-label fw-bold">Trimestre:</label>
                                 <select class="form-select form-control" required id="trimestre">
                                     <option>--</option>
                                     <option>23-I</option>
@@ -117,12 +124,12 @@
                             </div>
 
                             <div class="col-md-6">
-                                <label for="solicitante" class="form-label">Persona solicitante:</label>
+                                <label for="solicitante" class="form-label fw-bold">Persona solicitante:</label>
                                 <input type="text" class="form-control" id="solicitante"
                                     placeholder="Nombre o matricula o número económico">
                             </div>
                             <div class="col-md-6">
-                                <label for="denunciada" class="form-label">Persona denunciada</label>
+                                <label for="denunciada" class="form-label fw-bold">Persona denunciada:</label>
                                 <input type="text" class="form-control" id="denunciada"
                                     placeholder="Nombre o matricula o número económico">
                             </div>
@@ -157,8 +164,7 @@
 
                                         <th>Tipo</th>
                                         <th>Historial de seguimiento</th>
-                                        <th>Historial de Documentos</th>
-                                        <th>Personas involucradas</th>
+                                        <th>Historial de Documentos</th>                                        
                                         <th>Delegar solicitud</th>
                                         <th>Estado</th>
                                         <th></th>
@@ -185,11 +191,7 @@
                                     <td class="text-center"><button class="btn btn-primary btn-sm" type="button"
                                             onclick="window.location='accesoHistDoc.html'">
                                             Acceso
-                                        </button></td>
-                                    <td class="text-center"><button class="btn btn-primary btn-sm" type="button"
-                                            onclick="window.location='personasInvolucradas.html'">
-                                            Acceso
-                                        </button></td>
+                                        </button></td>                                    
                                     <td class="text-center"><button class="btn btn-primary btn-sm" type="button"
                                             onclick="window.location='delegarSolicitud.html'">
                                             Delegar

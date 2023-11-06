@@ -46,10 +46,7 @@
                                         <li><a class="dropdown-item" href="../usuarios/registroBuzonAyudaPsicologica.html">Ayuda psicológica</a></li>
 										<li><a class="dropdown-item" href="../usuarios/registroBuzonQueja.html">Reportes de quejas o eventualidades de violencia de género</a></li>
                                     </ul>
-                                </li>
-								 <li class="nav-item dropdown">
-                                     <a class="nav-link " href="../usuarios/seguimientoRegistros.html" role="button" >Seguimiento de registro</a>                                   
-                                </li>
+                                </li>								 
 								 <li class="nav-item dropdown">
                                      <a class="nav-link " href="./seguimientoRegistrosAdmon.html" role="button" >Seguimiento de registro (Admón)</a>                                   
                                 </li>
@@ -58,6 +55,16 @@
                                 </li>								
                             </ul>
                         </div>  
+                        <a class="navbar-brand" href="../documentos/ficha.docx" target="_blank">
+                            <button class="btn btn-primary" type="button">
+                                Ficha primera cita
+                            </button>
+                        </a>
+                        <a class="navbar-brand" href="../documentos/formatoQueja.docx" target="_blank">
+                            <button class="btn btn-primary" type="button">
+                                Formato de queja
+                            </button>
+                        </a>
                         <a class="navbar-brand" href="http://www.ler.uam.mx/es/Micrositios_UAML/BienestarUAML" target="_blank">
                             <button class="btn btn-primary" type="button">
                                 Más información
@@ -94,7 +101,7 @@
                                             <td>Escrito: Descripción de los hechos</td>
                                             <td>--</td>
                                             <td>Persona que registró la solicitud</td>
-                                            <td><button type="button" class="btn btn-danger btn-sm">Borrar</button></td>
+                                            <td><button type="button" class="btn btn-danger btn-sm">Borrar<sup style="font-size: small;">*</sup></button></td>
                                         </tr>
                                         <tr>
                                             <td>01/01/2023</td>
@@ -102,7 +109,11 @@
                                             <td>Evidencia</td>
                                             <td>Documento con fotografías de correos electrónicos</td>
                                             <td>Coord. Bienestar Universitario y Género</td>
-                                            <td><button type="button" class="btn btn-danger btn-sm">Borrar</button></td>
+                                            <td><button type="button" class="btn btn-danger btn-sm">Borrar<sup style="font-size: small;">*</sup></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="6"><span class="fst-italic fw-lighter link-warning"><sup style="font-size: small;">*</sup> Se aplicará un borrado "suave" que no eliminará definitivamente los documentos publicados</span></td>
+                                            
                                         </tr>
                                     </table>
 
@@ -124,7 +135,8 @@
                             <div class="row m-0">
                                 <div class="col-md-4">
                                     <div class="form-group mt-3">
-                                        <label for="nombre">Tipo</label>
+                                        <label for="nombre" class="form-label fw-bold">Tipo<sup
+                                            style="font-size: small; color:red;">*</sup>:</label>
                                         <select class="form-select form-control" required>
                                             <option>--</option>
                                             <option>Formato de queja</option>
@@ -137,7 +149,8 @@
                                     </div>
 
                                     <div class="form-group mt-3">
-                                        <label for="telefono">Documento</label>
+                                        <label for="telefono" class="form-label fw-bold">Documento<sup
+                                            style="font-size: small; color:red;">*</sup>:</label>
                                         <input type="file" class="form-control" id="telefono"
                                             placeholder="Selecciona documento en pdf">                                        
                                     </div>
@@ -145,14 +158,19 @@
                                 </div>
                                 <div class="col-md-4">
                                     <div class="form-group mt-3">
-                                        <label for="mensaje">Describir brevemente el
+                                        <label for="mensaje" class="form-label fw-bold">Describir brevemente el
                                             contenido del documento:</label>
                                         <textarea class="form-control" id="mensaje" rows="4"></textarea>
                                     </div>
 
                                 </div>
                                 <div class="col-md-4 ">
-
+                                    <div class="form-group mb-3">
+                                        <label for="mensaje" class="form-label mt-3 fw-bold">Emails adicionales para notificaciones:<div class="fst-italic fw-lighter">(Llenar sólo si se desea notificar a personas adicionales a la persona que está dando seguimiento o la persona en situación de víctima)</div></label>
+                                        <textarea class="form-control" id="mensaje" rows="2">abc@correo.ler.uam.mx, cde@correo.ler.uam.mx,
+efg@correo.ler.uam.mx
+                                        </textarea>
+                                    </div>
                                     <div class="form-group"><br />
                                         <button class="btn btn-primary btn-sm" type="button">
                                             Publicar documento

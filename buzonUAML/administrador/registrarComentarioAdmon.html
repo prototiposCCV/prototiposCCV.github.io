@@ -54,9 +54,6 @@
                                     </ul>
                                 </li>
 								 <li class="nav-item dropdown">
-                                     <a class="nav-link " href="../usuarios/seguimientoRegistros.html" role="button" >Seguimiento de registro</a>                                   
-                                </li>
-								 <li class="nav-item dropdown">
                                      <a class="nav-link " href="./seguimientoRegistrosAdmon.html" role="button" >Seguimiento de registro (Admón)</a>                                   
                                 </li>
                                 <li class="nav-item dropdown">
@@ -64,6 +61,16 @@
                                 </li>                               
                             </ul>
                         </div> 
+                        <a class="navbar-brand" href="../documentos/ficha.docx" target="_blank">
+                            <button class="btn btn-primary" type="button">
+                                Ficha primera cita
+                            </button>
+                        </a>
+                        <a class="navbar-brand" href="../documentos/formatoQueja.docx" target="_blank">
+                            <button class="btn btn-primary" type="button">
+                                Formato de queja
+                            </button>
+                        </a>
                         <a class="navbar-brand" href="http://www.ler.uam.mx/es/Micrositios_UAML/BienestarUAML" target="_blank">
                             <button class="btn btn-primary" type="button">
                                 Más información
@@ -120,19 +127,22 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="mensaje">Comentario</label>
+                                        <label for="comentario" class="form-label fw-bold">Comentario<sup
+                                            style="font-size: small; color: red;">*</sup>:</label><br />
                                         <textarea class="form-control" id="mensaje" rows="6"></textarea>
-
                                     </div>
-
-
+                                    <div class="form-group">
+                                        <label for="mensaje" class="form-label mt-3 fw-bold">Emails adicionales para notificaciones:<div class="fst-italic fw-lighter">(Llenar sólo si se desea notificar a personas adicionales a la persona en situación de víctima)</div></label>
+                                        <textarea class="form-control" id="mensaje" rows="2">abc@correo.ler.uam.mx, cde@correo.ler.uam.mx,
+efg@correo.ler.uam.mx
+                                        </textarea>
+                                    </div>
                                 </div>
                                 <div class="col-md-3">
                                     <div class="form-group align-items-center">
                                         <button type="submit" class="btn btn-primary btn-sm ">Registrar comentario <i
                                                 class="fa fa-paper-plane"></i></button>
                                     </div>
-
                                 </div>
 
 
