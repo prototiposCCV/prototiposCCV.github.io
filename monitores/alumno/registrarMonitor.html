@@ -48,7 +48,7 @@
                                     <a class="nav-link" href="../index.html">Inicio</a>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link " href="./registrarMonitor.html" role="button">Completar Registro
+                                    <a class="nav-link " href="./registrarMonitor.html" role="button">Registro
                                         proyecto</a>
                                 </li>
                                 <li class="nav-item dropdown">
@@ -112,7 +112,8 @@
                         PMU 05 - La UAM Lerma, patrimonio de humedales, de flora, fauna, arte y cultura.
                     </div>
                 </div>
-                <div class="row m-0">
+				<hr>
+                <!--<div class="row m-0">
                     <div class="col-md-12 col-sm-12  fw-bold" style="text-align: center;">
                         <span class="fst-italic fw-lighter link-warning">(Los datos de arriba se obtienen de la base de
                             datos, a partir del usuario logueado)</span>
@@ -124,6 +125,11 @@
                     <div class="col-md-12 col-sm-12  fw-bold" style="text-align: center;">
                         <span class="fst-italic fw-lighter link-danger">Averiguar que otros datos se requieren, al
                             parecer no tenemos acceso con el perfil de alumno</span>
+                    </div>
+                </div>-->
+				<div class="row m-0">
+                    <div class="col-md-12 col-sm-12  fw-bold" style="text-align: center;">
+                        <span class="fw-lighter fw-bold">LEE CUIDADOSAMENTE Y RESPONDE LOS SIGUIENTES DATOS:</span>
                     </div>
                 </div>
                 <input class="form-check-input my-3" type="checkbox" id="inlineCheckbox2" value="esEgresado"onclick="this.checked?document.getElementById('esEgresado').style.display='none':document.getElementById('esEgresado').style.display='block'">
@@ -140,7 +146,7 @@
                         <label class="form-check-label fw-bold" for="trimestreAnterior">Cursé UUEEAAs el trimestre
                             anterior</label>
                     </div><br />
-                    <span class="fst-italic fw-lighter link-warning">Estos datos se solicitan sólo en las categorías <b>Pantera negra</b> o <b>Impulsor, <a class="link-underline-danger text-warning" href="javascript:void(0)">no egresados</a></b> y se valida que:
+                    <span class="fst-italic fw-lighter link-warning">Estos datos se solicitan sólo en las categorías <b>Pantera negra</b> o <b>Impulsor</b> y se valida que:
                         <ul>
                             <li>Pantera Negra tenga un avance mínimo de 50% de los créditos del plan de estudios correspondiente</li>
                             <li>Impulsor tenga un avance mínimo de 30% de los créditos del plan de estudios correspondiente</li>
@@ -149,7 +155,7 @@
                             <li>Para posgrado validar que al menos tenga una unidad de enseñanza-aprendizaje en el trimestre donde se realiza la solicitud</li>                            
                         </ul></span>
                 </div>
-                <label for="credencial" class="form-label mt-3 fw-bold">Credencial vigente de la Unidad Lerma<sup
+                <label for="credencial" class="form-label mt-3 fw-bold">Credencial del INE<sup
                         style="color: red; font-size: small;">*</sup>:</label>
                 <div class="fst-italic fw-lighter">En formato PDF por ambos lados</div>
                 <input type="file" class="form-control form-text" id="credencial" required>
@@ -179,8 +185,7 @@
                             <h1 class="modal-title fs-5" id="exampleModalLabel">Registro exitoso</h1>
                         </div>
                         <div class="modal-body">
-                            Se envía notificación al Comité de Evaluación para validar tu solicitud. Si todo está en
-                            orden te notificarán para que inicies actividades.
+                            Se envía notificación al Responsable el Proyecto, mantente al tanto de tu correo electrónico.
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
