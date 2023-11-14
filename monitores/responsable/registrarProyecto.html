@@ -50,11 +50,14 @@
                                     <a class="nav-link" href="../index.html">Inicio</a>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link " href="./registrarProyecto.html" role="button">Registrar
-                                        proyecto</a>
+                                    <a class="nav-link " href="./listadoRegistroMonitores.html" role="button">Solicitudes de Monitor</a>
                                 </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link " href="./listadoProyectos.html" role="button">Mis Proyectos</a>
+                                </li>
+								<li class="nav-item dropdown">
+                                    <a class="nav-link " href="./registrarProyecto.html" role="button">Registrar
+                                        proyecto</a>
                                 </li>
                             </ul>
                         </div>
@@ -108,14 +111,7 @@
                         jperez@correo.ler.uam.mx
                     </div>
                 </div>
-                <div class="row m-0">
-                    <div class="col-md-12 col-sm-12  fw-bold" style="text-align: center;">
-                        <span class="fst-italic fw-lighter link-warning">(Los datos de arriba se obtienen de la base de
-                            datos, a partir del usuario logueado)</span>
-                    </div>
-                </div>
-
-                <br /><br />
+               <hr>
 
                 <form class="row g-3 align-items-start" onsubmit="handleSubmit(event)">
                     <div class="col-md-4 g-3 mx-2">
@@ -246,13 +242,23 @@
                                 participantes </div>
                         </label>
                         <textarea class="form-control form-text" id="lugar" rows="1"></textarea>
-                        <div class="form-check form-check-inline mt-4">
-                            <input type="checkbox" id="actividadesRelacionadas" class="form-check-input">
-                            <label for="actividadesRelacionadas" class="form-check-label fw-bold">Las actividades están
+                        <div class="form-check form-check-inline mt-4 p-3 border border-success rounded-2">
+                            <input type="checkbox" id="proy" class="form-check-input"
+                                onclick="this.checked?document.getElementById('proyListado').style.display='block':document.getElementById('proyListado').style.display='none'">
+                            <label for="proy" class="form-check-label fw-bold">Las actividades están
                                 relacionadas con algún proyecto de investigación, programa/proyecto de servicio social
                                 vigente, contrato o convenio
                             </label>
+                            <br/><br/>
+                            <div id="proyListado" style="display: none;">                                
+                                
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Nombre del proyecto">
+                                    <button class="btn btn-primary" type="button">Agregar</button>
+                                </div>
+                            </div>
                         </div>
+						
                     </div>
                     <div class="col-md-4 g-3 mx-2">
                         <div class="row">
@@ -556,7 +562,7 @@
                         Comité Evaluador.</h1>
                 </div>
                 <div class="modal-body">
-                    Recibirá un correo con un resumen de su registro.
+                    Recibirá un correo con un resumen de su registro. Se enviará un correo electrónico con el pdf con la información al comité evaluador.
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>

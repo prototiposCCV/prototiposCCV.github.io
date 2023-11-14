@@ -48,11 +48,14 @@
                                     <a class="nav-link" href="../index.html">Inicio</a>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link " href="./registrarProyecto.html" role="button">Registrar
-                                        proyecto</a>
+                                    <a class="nav-link " href="./listadoRegistroMonitores.html" role="button">Solicitudes de Monitor</a>
                                 </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link " href="./listadoProyectos.html" role="button">Mis Proyectos</a>
+                                </li>
+								<li class="nav-item dropdown">
+                                    <a class="nav-link " href="./registrarProyecto.html" role="button">Registrar
+                                        proyecto</a>
                                 </li>
                             </ul>
                         </div>
@@ -78,26 +81,26 @@
                         Nombre:
                     </div>
                     <div class="col-md-4 col-sm-8">
-                        JUANITO PÉREZ LÓPEZ
+                        JUAN GARCÍA HURTADO
                     </div>
 
                     <div class="col-md-2 col-sm-4  fw-bold" style="text-align: right;">
-                        No. económico:
+                        Matricula:
                     </div>
                     <div class="col-md-4 col-sm-8">
-                        78910
+                        22345322
                     </div>
                     <div class="col-md-2 col-sm-4 fw-bold" style="text-align: right;">
-                        Área de adscripción:
+                        Plan de Estudios:
                     </div>
                     <div class="col-md-4 col-sm-8">
-                        COORDINACIÓN DE ENLACE ACADÉMICO
+                        Lic. en Recursos Hídricos
                     </div>
                     <div class="col-md-2 col-sm-4 fw-bold" style="text-align: right;">
                         Email institucional:
                     </div>
                     <div class="col-md-4 col-sm-8">
-                        jperez@correo.ler.uam.mx
+                        22345322@correo.ler.uam.mx
                     </div>
                     <div class="col-md-2 col-sm-4 fw-bold" style="text-align: right;">
                         Proyecto:
@@ -106,20 +109,13 @@
                         PMU 02 - Secuencias didácticas para la producción educativa digital en licenciaturas de ingeniería.
                     </div>
                 </div>
-                <div class="row m-0">
-                    <div class="col-md-12 col-sm-12  fw-bold" style="text-align: center;">
-                        <span class="fst-italic fw-lighter link-warning">(Los datos de arriba se obtienen de la base de
-                            datos, a partir del usuario logueado)</span>
-                    </div>
-                </div>
-
-                <br /><br />
-                <label for="nombre" class="form-label mt-3 fw-bold">Aspirante a monitor universitario<sup
+                <hr/>
+               <!-- <label for="nombre" class="form-label mt-3 fw-bold">Aspirante a monitor universitario<sup
                         style="color: red; font-size: small;">*</sup>:</label>
 
                 <input type="text" class="form-control" aria-label="Text input with dropdown button"
                     placeholder="Nombre o matrícula" required>
-
+-->
 
                 <label for="categoria" class="form-label mt-3 fw-bold">Categoría<sup
                         style="color: red; font-size: small;">*</sup>:
@@ -130,7 +126,7 @@
                     <option value="impulsor">Impulsor</option>
                     <option value="uamita">UAMITA</option>
                 </select>
-                <label for="planEstudios" class="form-label mt-3 fw-bold">Plan de estudios<sup
+               <!-- <label for="planEstudios" class="form-label mt-3 fw-bold">Plan de estudios<sup
                     style="color: red; font-size: small;">*</sup>:
             </label>
             <select class="form-control form-select" id="planEstudios" required>
@@ -154,7 +150,7 @@
                     <option value="MDCS">MAESTRIA Y DOCTORADO EN CIENCIAS SOCIALES</option>
                     <option value="DOCBS">DOCTORADO EN CIENCIAS BIOLÓGICAS Y DE LA SALUD</option>
                 </optgroup>
-            </select>
+            </select>-->
                 <div class="row m-0">
                     <div class="col-12 text-center my-4">
                         <button class="btn btn-primary btn-sm" type="submit" data-bs-toggle="modal"
@@ -178,7 +174,7 @@
                     <h1 class="modal-title fs-5" id="exampleModalLabel">Registro exitoso</h1>
                 </div>
                 <div class="modal-body">
-                    El aspirante recibirá un correo para que concluya su registro.
+                    Se genera el oficio de aceptación del responsable del proyecto y se enviará por correo al comité evaluador  para que revisen y validen el registro del alumno como monitor. <br/>El registro pasará al estado "Aceptado por el responsable del proyecto".
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
