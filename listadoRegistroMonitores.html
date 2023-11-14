@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Monitores</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <script type="text/javascript">
+        
+    </script>
+    <link rel="icon" type="image/x-icon" href="../img/logoMonitor.jpg">
+</head>
+
+<body>
+    <div class="container-fluid  mt-3 text-center">
+        <div class="row">
+            <div class="col-sm-3 p-2 ">
+                <img class="img-fluid" src="../img/ccv.jpg" alt="New York">
+            </div>
+            <div class="col-sm-9 p-2 ">
+                <h4>SISTEMA DE GESTION ADMINISTRATIVA</h4>
+                <p>Coordinación de Campus Virtual.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mt-3">
+        <div class="row">
+            <div class="col-sm-12 p-3 mt-1 text-white text-break">
+                <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">
+                            <img src="../img/img_avatar1.png" alt="Logo" style="width:40px;" class="rounded-pill">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapsibleNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../index.html">Inicio</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link " href="./listadoRegistroMonitores.html" role="button">Solicitudes de Monitor</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link " href="./listadoProyectos.html" role="button">Mis Proyectos</a>
+                                </li>
+								<li class="nav-item dropdown">
+                                    <a class="nav-link " href="./registrarProyecto.html" role="button">Registrar
+                                        proyecto</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <a class="navbar-brand" href="#">
+                            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#demo">
+                                Ayuda
+                            </button>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+
+        </div>
+
+        <section class="big-section bg-white">
+            <div class="container p-0">
+                <h4 class="alt-font text-black text-center  letter-spacing-minus-1px margin-50px-bottom">
+                    LISTADO DE SOLICITUDES - MONITOR UNIVERSITARIO</h4><br />               
+                <hr>
+                <table class="table table-hover table-responsive">
+                    <thead>
+                      <tr>
+                        <th scope="col">Clave</th>
+                        <th scope="col">Alumno</th>
+						<th scope="col">Documentos</th>
+						<th scope="col">Proyecto</th>
+                        <th scope="col">Estado</th>
+                        <th></th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>                       
+                        <td>PMU 02 </td>
+						<td>22342343 Juan García Hurtado</td>
+						<td><a href="./SecuenciasDidactivasProdEducativa.pdf" target="_blank"><i class="bi bi-file-earmark-pdf"></i>Solicitud</a></td>
+						<td>PROY-01 Secuencias didácticas para la producción educativa digital en licenciaturas de ingeniería.</td>
+                        <td>En proceso</td>
+                        <td><button type="button" class="btn btn-outline-primary btn-sm" onclick="window.location.href='./registrarMonitor.html'">Atender solicitudes de monitor</button></td>
+                        <td></td>
+                      </tr>
+					  <tr>                       
+                        <td>PMU 02 </td>
+						<td>22342343 Polo Escobedo Espinoza</td>
+						<td><a href="./SecuenciasDidactivasProdEducativa.pdf" target="_blank"><i class="bi bi-file-earmark-pdf"></i>Solicitud</a><br/>
+						<a href="./SecuenciasDidactivasProdEducativa.pdf" target="_blank"><i class="bi bi-file-earmark-pdf"></i>Aceptación_resp_proy</a>
+						</td>
+						<td>PROY-01 Secuencias didácticas para la producción educativa digital en licenciaturas de ingeniería.</td>
+                        <td>Aceptado por el responsable del proyecto</td>
+                        <td></td>
+                        <td></td>
+                      </tr>	
+					  <!--<tr>                       
+                        <td>PMU 03</td>
+                        <td>22342343 Edith Benites Fuentes</td>
+						<td><a href="./SecuenciasDidactivasProdEducativa.pdf" target="_blank"><i class="bi bi-file-earmark-pdf"></i>Solicitud</a><br/>
+						<a href="./SecuenciasDidactivasProdEducativa.pdf" target="_blank"><i class="bi bi-file-earmark-pdf"></i>Aceptación_resp_proy</a>
+						<br/>
+						<a href="./SecuenciasDidactivasProdEducativa.pdf" target="_blank"><i class="bi bi-file-earmark-pdf"></i>Aceptación_comité</a>
+						</td>
+						<td>Monitor Activo</td>
+                        <td><button type="button" class="btn btn-outline-success" onclick="window.location.href='./listarInformes.html'">Informes</button></td>
+                      </tr>	-->
+                      <tr>                       
+                        <td>PMU 02 </td>
+						<td>22342343 Juan García Hurtado</td>
+						<td><a href="./SecuenciasDidactivasProdEducativa.pdf" target="_blank"><i class="bi bi-file-earmark-pdf"></i>Solicitud</a></td>
+						<td>PROY-01 Secuencias didácticas para la producción educativa digital en licenciaturas de ingeniería.</td>
+                        <td>No aceptado por el responsable del proyecto</td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+					  <tr>                       
+                        <td>PMU 02 </td>
+						<td>22342343 Polo Escobedo Espinoza</td>
+						<td><a href="./SecuenciasDidactivasProdEducativa.pdf" target="_blank"><i class="bi bi-file-earmark-pdf"></i>Solicitud</a><br/>
+						<a href="./SecuenciasDidactivasProdEducativa.pdf" target="_blank"><i class="bi bi-file-earmark-pdf"></i>Aceptación_resp_proy</a>
+						</td>
+						<td>PROY-01 Secuencias didácticas para la producción educativa digital en licenciaturas de ingeniería.</td>
+                        <td>No aceptado por el comité</td>
+                        <td></td>
+                        <td></td>
+                      </tr> 
+                    </tbody>
+                  </table>
+                
+            </div>
+        </section>
+
+        <div class="container-fluid mt-1 text-center">
+            <div class="row">
+                <hr>
+                <div class="col-sm-6 p-2 ">
+
+                    <h4>Footer</h4>
+                    <p>Coordinación de Campus Virtual.</p>
+                </div>
+                <div class="col-sm-6 p-2 ">
+
+                    <h4>Footer</h4>
+                    <p>Coordinación de Campus Virtual.</p>
+                </div>
+                <div class="col-sm-12 p-2 ">
+
+
+                    <p>Universidad Autonoma Metropolitana Unidad Lerma,
+                        Avenida de las Granjas #123, col. El panteón </p>
+                </div>
+                <div class="offcanvas offcanvas-end" id="demo">
+                    <div class="offcanvas-header">
+                        <h1 class="offcanvas-title">Ayuda</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul>
+                            <li style="text-align: left;"><a href=./PreguntasFrecuentes-Academicos-VF-160123.pdf'
+                                    target="_blank">Preguntas frecuentes</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Muchas gracias, el proyecto será valorado por el Comité Evaluador.</h1>                    
+                </div>
+                <div class="modal-body">
+                    Recibirá un correo con un resumen de su registro.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
