@@ -53,9 +53,6 @@
                                 <li class="nav-item dropdown">
                                     <a class="nav-link " href="./listadoProyectos.html" role="button">Listado de proyectos</a>
                                 </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link " href="./listadoInformes.html" role="button">Listado de informes</a>
-                                </li>
                             </ul>
                         </div>
                         <a class="navbar-brand" href="#">
@@ -80,6 +77,7 @@
                       <tr>
                         <th scope="col">Clave</th>
                         <th scope="col">Descripción</th>
+						<th scope="col">Informes de Monitores</th>
                         <th scope="col">Estado</th>
                         <th></th>
                         <th></th>
@@ -89,24 +87,28 @@
                       <tr>                       
                         <td>PMU 02 <a href="./SecuenciasDidactivasProdEducativa.pdf" target="_blank"><i class="bi bi-file-earmark-pdf"></i></a></td>
                         <td>Secuencias didácticas para la producción educativa digital en licenciaturas de ingeniería.</td>
+						<td><a class="navbar-brand" href="./listadoInformes.html"><button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#aprobar">Informes</button></a>
+						</td>
                         <td>Aprobado</td>
                         
                       </tr>  
                       <tr>                       
                         <td>PMU 06 <a href="./SecuenciasDidactivasProdEducativa.pdf" target="_blank"><i class="bi bi-file-earmark-pdf"></i></a></td>
-                        <td>Diseño y elaboración de software para programar UUEEAAs.</td>                        
+                        <td>Diseño y elaboración de software para programar UUEEAAs.</td>   
+						<td></td>
                         <td>No aprobado</td>
                         
                       </tr>     
                       <tr>                       
                         <td>PMU 08 <a href="./SecuenciasDidactivasProdEducativa.pdf" target="_blank"><i class="bi bi-file-earmark-pdf"></i></a></td>
                         <td>Diseño de material educativo digital y difusión social de la ciencia.</td>
+						<td></td>
                         <td><button type="button" class="btn btn-outline-success" data-bs-toggle="modal"
                             data-bs-target="#aprobar">Notificar aprobación</button>
                             <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal"
                             data-bs-target="#solicitarAjustes">Solicitar ajustes</button>
                             <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal"
-                            data-bs-target="#notificarComite">Notificar fin del proceso</button></td>                        
+                            data-bs-target="#notificarComite">Notificar no aprobación</button></td>                        
                       </tr>                
                     </tbody>
                   </table>
