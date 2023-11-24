@@ -130,14 +130,7 @@
                 <input class="form-check-input my-3" type="checkbox" id="inlineCheckbox2" value="esEgresado"onclick="this.checked?document.getElementById('esEgresado').style.display='none':document.getElementById('esEgresado').style.display='block'">
                 <label class="form-check-label fw-bold my-3" for="egresado">Soy egresado</label><br/>
                 <div class="border border-warning rounded-2" id="esEgresado">
-					<label for="zona" class="form-label mt-3 fw-bold">Proyecto
-						<sup style="color: red; font-size: small;">*</sup>:
-                        </label>
-                        <select class="form-control form-select" id="zona" required>
-                            <option value="0" selected>Seleccionar...</option>
-                            <option value="urbana">PMU 01 Secuencias didácticas para la producción educativa digital en licenciaturas de ingeniería.</option>
-                            <option value="rural">PMU 05  La UAM Lerma, patrimonio de humedales, de flora, fauna, arte y cultura.</option>
-                     </select>
+					
                     <label for="creditosCursados" class="form-label mt-3 fw-bold">Créditos cursados hasta el momento<sup
                             style="color: red; font-size: small;">*</sup>:</label>
                     <input type="number" class="form-control form-text" id="creditosCursados" required>
@@ -158,6 +151,14 @@
                             <li>Para posgrado validar que al menos tenga una unidad de enseñanza-aprendizaje en el trimestre donde se realiza la solicitud</li>                            
                         </ul></span>
                 </div>
+				<label for="zona" class="form-label mt-3 fw-bold">Proyecto
+						<sup style="color: red; font-size: small;">*</sup>:
+                        </label>
+                        <select class="form-control form-select" id="zona" required>
+                            <option value="0" selected>Seleccionar...</option>
+                            <option value="urbana">PMU 01 Secuencias didácticas para la producción educativa digital en licenciaturas de ingeniería.</option>
+                            <option value="rural">PMU 05  La UAM Lerma, patrimonio de humedales, de flora, fauna, arte y cultura.</option>
+                     </select>
                 <label for="credencial" class="form-label mt-3 fw-bold">Credencial del INE<sup
                         style="color: red; font-size: small;">*</sup>:</label>
                 <div class="fst-italic fw-lighter">En formato PDF por ambos lados</div>
