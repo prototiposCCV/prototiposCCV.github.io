@@ -48,7 +48,7 @@
                                     <a class="nav-link" href="../index.html">Inicio</a>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link " href="./listadoMonitores.html" role="button">Listado de monitores</a>
+                                    <a class="nav-link " href="./listadoMonitores.html" role="button">Solicitud de monitores</a>
                                 </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link " href="./listadoProyectos.html" role="button">Listado de proyectos</a>
@@ -78,7 +78,7 @@
                         <th scope="col">Monitor</th>
                         <th scope="col">Informes</th>
 						<th scope="col">Estado</th>
-						<th >Oficios</th>
+						<th >Folios: Entrega de apoyos</th>
                         <th></th>  
                         <th></th>                     
 						<th></th>        
@@ -91,14 +91,19 @@
 						<a href="./SecuenciasDidactivasProdEducativa.pdf" target="_blank"><i class="bi bi-file-earmark-pdf"></i>Informe Parcial 2</a>
 						</td>
 						<td>Aprobado por el Responsable del Proyecto</td>
-						<td>						  	
+						<td>
+							SPM_RUL_03<br/><hr>						  	
+							<form class="row g-3 align-items-start" onsubmit="handleSubmit(event)"><input type="text" class="form-control form-text" id="folio" placeholder="Folio"
+                            required>
+							<a href="./publicarDocumentos.html"><button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#solicitarAjustes">Alta de folio</button></a>
+							</form>
 						</td>
                         <td><button type="button" class="btn btn-outline-danger btn-sm" data-bs-toggle="modal"
                             data-bs-target="#solicitarAjustes">Solicitar ajustes</button></td>
-						<td><a href="./publicarDocumentos.html"><button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
-                            data-bs-target="#solicitarAjustes">Publicar documentos</button></a></td>
-                        <td><button type="button" class="btn btn-outline-success btn-sm" data-bs-toggle="modal"
-                            data-bs-target="#notificarComite">Notificar liberación del pago</button></td>
+						<td><a href="http://nadu.ler.uam.mx:3010/auth/login"><button type="button" class="btn btn-outline-success btn-sm" data-bs-toggle="modal"
+                            data-bs-target="http://nadu.ler.uam.mx:3010/auth/login">Registrar solicitud de pago</button></a>
+						</td>
+						</td>
                       </tr> 
 					  <tr>                       
                         <td>20345678 - Isabel Chávez Guzmán (Pantera negra)</td>
@@ -107,39 +112,35 @@
 						</td>                
 						<td>Ajustes solicitados por el Comité Evaluador</td>
 						<td>
-						  	<div class="col-md-4 col-sm-8">
-                        		<a href="./SecuenciasDidactivasProdEducativa.pdf" target="_blank"><i class="bi bi-file-earmark-pdf"></i>OficioPago-InformeParcial1</a><br/>
-								<a href="./SecuenciasDidactivasProdEducativa.pdf" target="_blank"><i class="bi bi-file-earmark-pdf"></i>OficioPago-InformeParcial2</a>
-                    		</div>
+						  	SPM_RUL_01<br/><hr>						  	
+							<form class="row g-3 align-items-start" onsubmit="handleSubmit(event)"><input type="text" class="form-control form-text" id="folio" placeholder="Folio"
+                            required>
+							<a href="./publicarDocumentos.html"><button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#solicitarAjustes">Alta de folio</button></a>
+							</form>
 						</td>
-						<td><a href="./publicarDocumentos.html"><button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
-                            data-bs-target="#solicitarAjustes">Publicar documentos</button></a></td>
-                        <td><button type="button" class="btn btn-outline-success btn-sm" data-bs-toggle="modal"
-                            data-bs-target="#notificarComite">Notificar liberación del pago</button></td>
+						<td><button type="button" class="btn btn-outline-danger btn-sm" data-bs-toggle="modal"
+                            data-bs-target="#solicitarAjustes">Solicitar ajustes</button></td>
+		
+                        <td><a href="http://nadu.ler.uam.mx:3010/auth/login"><button type="button" class="btn btn-outline-success btn-sm" data-bs-toggle="modal"
+                            data-bs-target="http://nadu.ler.uam.mx:3010/auth/login">Registrar solicitud de pago</button></a></td>
                       </tr> 
-					   <tr>                       
-                        <td>20345678 - Isabel Chávez Guzmán (Pantera negra)</td>
-                        <td><a href="./SecuenciasDidactivasProdEducativa.pdf" target="_blank"><i class="bi bi-file-earmark-pdf"></i>Informe Parcial 1</a><br/>
-						<a href="./SecuenciasDidactivasProdEducativa.pdf" target="_blank"><i class="bi bi-file-earmark-pdf"></i>Informe Parcial 2</a>
-						</td>                
-						<td>Ajustes solicitados por el Comité Evaluador</td>
-						<td></td>
-						<td><a href="./publicarDocumentos.html"><button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
-                            data-bs-target="#solicitarAjustes">Publicar documentos</button></a></td>
-                        <td></td>
-                      </tr> 
+					  
                       <tr>                       
                         <td>20345678 - Isabel Chávez Guzmán (Pantera negra)</td>
                         <td><a href="./SecuenciasDidactivasProdEducativa.pdf" target="_blank"><i class="bi bi-file-earmark-pdf"></i>Final - Único</a>
 						</td>
 						<td>Aprobado por el Responsable del Proyecto</td>
-						<td></td>
-                        <td><button type="button" class="btn btn-outline-danger" data-bs-toggle="modal"
+						<td>						  	
+							<form class="row g-3 align-items-start" onsubmit="handleSubmit(event)"><input type="text" class="form-control form-text" id="folio" placeholder="Folio"
+                            required>
+							<a href="./publicarDocumentos.html"><button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#solicitarAjustes">Alta de folio</button></a>
+							</form>
+						</td>
+                        <td><button type="button" class="btn btn-outline-danger btn-sm" data-bs-toggle="modal"
                             data-bs-target="#solicitarAjustes">Solicitar ajustes</button></td>
-						<td><a href="./publicarDocumentos.html"><button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
-                            data-bs-target="#solicitarAjustes">Publicar documentos</button></a></td>
-                        <td><button type="button" class="btn btn-outline-success btn-sm" data-bs-toggle="modal"
-                            data-bs-target="#notificarComite">Notificar liberación del pago</button></td>
+		
+                        <td><a href="http://nadu.ler.uam.mx:3010/auth/login"><button type="button" class="btn btn-outline-success btn-sm" data-bs-toggle="modal"
+                            data-bs-target="http://nadu.ler.uam.mx:3010/auth/login">Registrar solicitud de pago</button></a></td>
                       </tr> 
 						<tr>                       
                         <td>20345678 - Isabel Chávez Guzmán (Pantera negra)</td>
@@ -150,10 +151,9 @@
 						<td>Concluido</td>
 						<td>
 						  	<div class="col-md-4 col-sm-8">
-								<a href="./SecuenciasDidactivasProdEducativa.pdf" target="_blank"><i class="bi bi-file-earmark-pdf"></i>OficioPago-InformeParcial2</a><br/>
-                        		<a href="./SecuenciasDidactivasProdEducativa.pdf" target="_blank"><i class="bi bi-file-earmark-pdf"></i>OficioPago-InformeParcial2</a><br/>
-								<a href="./SecuenciasDidactivasProdEducativa.pdf" target="_blank"><i class="bi bi-file-earmark-pdf"></i>OficioPago-InformeFinal</a><br/>
-								<a href="./SecuenciasDidactivasProdEducativa.pdf" target="_blank"><i class="bi bi-file-earmark-pdf"></i>Constancia de participación</a>
+								SPM_RUL_01<br/>
+								SPM_RUL_02<br/>
+								SPM_RUL_03
                     		</div>
 						</td>
 						<td></td>

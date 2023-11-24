@@ -10,9 +10,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <script type="text/javascript">
-
+        function handleSubmit(event) {
+            event.preventDefault()
+            console.log(event)
+        }
     </script>
     <link rel="icon" type="image/x-icon" href="../img/logoMonitor.jpg">
 </head>
@@ -48,14 +50,10 @@
                                     <a class="nav-link" href="../index.html">Inicio</a>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link " href="./listadoRegistroMonitores.html" role="button">Solicitudes de Monitor</a>
+                                    <a class="nav-link " href="./listadoMonitores.html" role="button">Solicitud de monitores</a>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link " href="./listadoProyectos.html" role="button">Mis Proyectos</a>
-                                </li>
-								<li class="nav-item dropdown">
-                                    <a class="nav-link " href="./registrarProyecto.html" role="button">Registrar
-                                        proyecto</a>
+                                    <a class="nav-link " href="./listadoProyectos.html" role="button">Listado de proyectos</a>
                                 </li>
                             </ul>
                         </div>
@@ -74,8 +72,8 @@
         <section class="big-section bg-white">
             <div class="container p-0">
                 <h4 class="alt-font text-black text-center  letter-spacing-minus-1px margin-50px-bottom">
-                    REGISTRO DE ASPIRANTE - MONITOR UNIVERSITARIO</h4><br />
-                <div class="row m-0">
+                    REGISTRO DE PROYECTO - MONITOR UNIVERSITARIO</h4><br />
+               <div class="row m-0">
 
                     <div class="col-md-2 col-sm-4 fw-bold" style="text-align: right;">
                         Nombre:
@@ -85,10 +83,10 @@
                     </div>
 
                     <div class="col-md-2 col-sm-4  fw-bold" style="text-align: right;">
-                        Matricula:
+                        Clave de Monitor:
                     </div>
                     <div class="col-md-4 col-sm-8">
-                        22345322
+                        MU-01
                     </div>
                     <div class="col-md-2 col-sm-4 fw-bold" style="text-align: right;">
                         Plan de Estudios:
@@ -97,10 +95,10 @@
                         Lic. en Recursos Hídricos
                     </div>
                     <div class="col-md-2 col-sm-4 fw-bold" style="text-align: right;">
-                        Email institucional:
+                       Matrícula:
                     </div>
                     <div class="col-md-4 col-sm-8">
-                        22345322@correo.ler.uam.mx
+                        22345322
                     </div>
                     <div class="col-md-2 col-sm-4 fw-bold" style="text-align: right;">
                         Proyecto:
@@ -108,80 +106,75 @@
                     <div class="col-md-4 col-sm-8">
                         PMU 02 - Secuencias didácticas para la producción educativa digital en licenciaturas de ingeniería.
                     </div>
-                </div>
-                <hr/>
-               <!-- <label for="nombre" class="form-label mt-3 fw-bold">Aspirante a monitor universitario<sup
-                        style="color: red; font-size: small;">*</sup>:</label>
-
-                <input type="text" class="form-control" aria-label="Text input with dropdown button"
-                    placeholder="Nombre o matrícula" required>
--->
-
-                <label for="categoria" class="form-label mt-3 fw-bold">Categoría<sup
-                        style="color: red; font-size: small;">*</sup>:
-                </label>
-                <select class="form-control form-select" id="categoria" required>
-                    <option value="0" selected>Seleccionar...</option>
-                    <option value="panteraNegra">Pantera negra</option>
-                    <option value="impulsor">Impulsor</option>
-                    <option value="uamita">UAMITA</option>
-                </select>
-               <!-- <label for="planEstudios" class="form-label mt-3 fw-bold">Plan de estudios<sup
-                    style="color: red; font-size: small;">*</sup>:
-            </label>
-            <select class="form-control form-select" id="planEstudios" required>
-                <option value="0" selected>Seleccionar...</option>
-                <optgroup label="DCBI">
-                    <option value="IRH">LICENCIATURA EN INGENIERÍA EN RECURSOS HÍDRICOS</option>
-                    <option value="ICT">LICENCIATURA EN INGENIERÍA EN COMPUTACIÓN Y TELECOMUNICACIONES</option>
-                    <option value="ISMI">LICENCIATURA EN INGENIERÍA EN SISTEMAS MECATRÓNICOS INDUSTRIALES</option>
-                </optgroup>
-                <optgroup label="DCBS">
-                    <option value="LBA">LICENCIATURA EN BIOLOGÍA AMBIENTAL</option>
-                    <option value="LCTA">LICENCIATURA EN CIENCIA Y TECNOLOGÍA DE ALIMENTOS</option>
-                    <option value="LPB">LICENCIATURA EN PSICOLOGÍA BIOMÉDICA</option>
-                </optgroup>
-                <optgroup label="DCSH">
-                    <option value="LBA">LICENCIATURA EN POLÍTICAS PÚBLICAS</option>
-                    <option value="LCTA">LICENCIATURA EN ARTES Y COMUNICACIÓN DIGITALES</option>
-                    <option value="LETD">LICENCIATURA EN EDUCACIÓN Y TECNOLOGÍAS DIGITALES</option>
-                </optgroup>
-                <optgroup label="POSTGRADO">
-                    <option value="MDCS">MAESTRIA Y DOCTORADO EN CIENCIAS SOCIALES</option>
-                    <option value="DOCBS">DOCTORADO EN CIENCIAS BIOLÓGICAS Y DE LA SALUD</option>
-                </optgroup>
-            </select>-->
-                <div class="row m-0">
-                    <div class="col-12 text-center my-4">
-                        <button class="btn btn-primary btn-sm" type="submit" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal">
-                            Enviar
-                        </button>
+				    <div class="col-md-2 col-sm-4 fw-bold" style="text-align: right;">
+                        Clasificación:
                     </div>
+                    <div class="col-md-4 col-sm-8">
+                        Pantera Negra.
+                    </div>
+                </div>
+               <hr>
 
-                </div><br />
-                <span class="fst-italic fw-lighter link-danger">En caso de seleccionar las categorías <b>Pantera Negra</b> o <b>Impulsor</b>, el sistema validará que el aspirante no esté registrado
-                    en un periodo vigente con alguna de esas categorías.<br/> 
-                    También verificará si estuvo registrado en algún periodo previo y entregó oportunamente el reporte final de actividades y la evaluación de los resultados sea favorable.<br/>                    
-                </span>
-            </div>
+                <form class="row g-3 align-items-start" onsubmit="handleSubmit(event)">
+                    <div class="col-md-5 g-3 mx-2">
+                        <div class="row">
+                            <div class="col-md-12 g-3">
+                                <h5 class="alt-font text-black text-center letter-spacing-minus-1px my-4">FECHAS DE ACTIVIDADES
+                                </h5>
+                            </div>
+                        </div>
+                       
+                        </label>
+                        <label class="form-label mt-3 fw-bold" for="fechaInicio">Fecha de inicio de las
+                                actividades<sup style="color: red; font-size: small;">*</sup>:</label>
+                                <input type="date" class="form-control" id="fechaInicio" required>
+					   <label class="form-label mt-3 fw-bold" for="fechaInicio">Fecha de final de las
+                                actividades<sup style="color: red; font-size: small;">*</sup>:</label>
+                                <input type="date" class="form-control" id="fechaInicio" required>
+						
+                    </div>
+                    <div class="col-md-5 g-3 mx-2">
+                        <div class="row">
+                            <div class="col-md-12 g-3">
+                                <h5 class="alt-font text-black text-center letter-spacing-minus-1px my-4">FECHAS DE REPORTES DE ACTIVIDADES
+                                </h5>
+                            </div>
+                        </div>
 
-             <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Registro exitoso</h1>
-                </div>
-                <div class="modal-body">
-                    Se genera el oficio de aceptación del responsable del proyecto y se enviará por correo al comité evaluador  para que revisen y validen el registro del alumno como monitor. <br/>El registro pasará al estado "Aceptado por el responsable del proyecto".
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                </div>
+                       
+						<label class="form-label mt-3 fw-bold" for="fechaInicio">Fecha para el reporte parcial 1<sup style="color: red; font-size: small;">*</sup>:</label>
+                                <input type="date" class="form-control" id="fechaInicio" required>
+						<label class="form-label mt-3 fw-bold" for="fechaInicio">Fecha para el reporte parcial 2<sup style="color: red; font-size: small;">*</sup>:</label>
+                                <input type="date" class="form-control" id="fechaInicio" required>
+						<label class="form-label mt-3 fw-bold" for="fechaInicio">Fecha para el reporte final<sup style="color: red; font-size: small;">*</sup>:</label>
+                                <input type="date" class="form-control" id="fechaInicio" required>
+                         
+                       
+                    </div>
+                    <!--<div class="col-md-3 g-3 mx-2">
+                        <div class="col-md-12 g-3">
+                            <h5 class="alt-font text-black text-center letter-spacing-minus-1px my-4">CARACTERÍSTICAS DE
+                                LAS Y LOS MONITORES PARTICIPANTES
+                            </h5>
+
+                        </div>
+                        <label class="form-label mt-3 fw-bold" for="fechaInicio">Fecha de inicio de las
+                                actividades<sup style="color: red; font-size: small;">*</sup>:</label>
+                                <input type="date" class="form-control" id="fechaInicio" required> 
+						
+                    </div>-->
+
+                    <div class="row m-0">
+                        <div class="col-12 text-center my-4">
+                            <button class="btn btn-primary btn-sm" type="submit" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Enviar
+                            </button>
+                        </div>
+
+                    </div>
+                </form>
             </div>
-        </div>
-    </div>
         </section>
 
         <div class="container-fluid mt-1 text-center">
@@ -223,11 +216,10 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Muchas gracias, el proyecto será valorado por el
-                        Comité Evaluador.</h1>
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Muchas gracias, has sido aceptado como Monitor, no te olvides de registrar tus reportes de actividades en las fechas establecidas.</h1>
                 </div>
                 <div class="modal-body">
-                    Recibirá un correo con un resumen de su registro.
+                    Recibirá un correo al alumno con la notificación de que fue aceptado como monitos, con las fechas configuradas de inicio y fin de actividades, así como las fechas de publicación de sus reportes de actividades.
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>

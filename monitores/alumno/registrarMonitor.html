@@ -105,12 +105,7 @@
                     <div class="col-md-4 col-sm-8">
                         Pantera Negra
                     </div>
-                    <div class="col-md-2 col-sm-4 fw-bold" style="text-align: right;">
-                        Proyecto:
-                    </div>
-                    <div class="col-md-4 col-sm-8">
-                        PMU 05 - La UAM Lerma, patrimonio de humedales, de flora, fauna, arte y cultura.
-                    </div>
+                    
                 </div>
 				<hr>
                 <!--<div class="row m-0">
@@ -135,6 +130,14 @@
                 <input class="form-check-input my-3" type="checkbox" id="inlineCheckbox2" value="esEgresado"onclick="this.checked?document.getElementById('esEgresado').style.display='none':document.getElementById('esEgresado').style.display='block'">
                 <label class="form-check-label fw-bold my-3" for="egresado">Soy egresado</label><br/>
                 <div class="border border-warning rounded-2" id="esEgresado">
+					<label for="zona" class="form-label mt-3 fw-bold">Proyecto
+						<sup style="color: red; font-size: small;">*</sup>:
+                        </label>
+                        <select class="form-control form-select" id="zona" required>
+                            <option value="0" selected>Seleccionar...</option>
+                            <option value="urbana">PMU 01 Secuencias didácticas para la producción educativa digital en licenciaturas de ingeniería.</option>
+                            <option value="rural">PMU 05  La UAM Lerma, patrimonio de humedales, de flora, fauna, arte y cultura.</option>
+                     </select>
                     <label for="creditosCursados" class="form-label mt-3 fw-bold">Créditos cursados hasta el momento<sup
                             style="color: red; font-size: small;">*</sup>:</label>
                     <input type="number" class="form-control form-text" id="creditosCursados" required>
@@ -146,7 +149,7 @@
                         <label class="form-check-label fw-bold" for="trimestreAnterior">Cursé UUEEAAs el trimestre
                             anterior</label>
                     </div><br />
-                    <span class="fst-italic fw-lighter link-warning">Estos datos se solicitan sólo en las categorías <b>Pantera negra</b> o <b>Impulsor</b> y se valida que:
+                    <span class="fst-italic fw-lighter link-danger">Estos datos se solicitan sólo en las categorías <b>Pantera negra</b> o <b>Impulsor</b> y se valida que:
                         <ul>
                             <li>Pantera Negra tenga un avance mínimo de 50% de los créditos del plan de estudios correspondiente</li>
                             <li>Impulsor tenga un avance mínimo de 30% de los créditos del plan de estudios correspondiente</li>
@@ -163,6 +166,8 @@
                     vigente<sup style="color: red; font-size: small;">*</sup>:</label>
                 <div class="fst-italic fw-lighter">En formato PDF</div>
                 <input type="file" class="form-control form-text" id="seguroFacultativo" required>
+				  <span class="fst-italic fw-lighter link-danger">Si no se publican los documentos, no se puede continuar con el registro
+				</span>
 
                 <div class="row m-0">
                     <div class="col-12 text-center my-4">
