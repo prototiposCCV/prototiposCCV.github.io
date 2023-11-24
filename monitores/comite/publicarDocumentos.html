@@ -53,6 +53,9 @@
                                 <li class="nav-item dropdown">
                                     <a class="nav-link " href="./listadoProyectos.html" role="button">Listado de proyectos</a>
                                 </li>
+								<li class="nav-item dropdown">
+                                    <a class="nav-link " href="./reportesEnlace.html" role="button">Reportes</a>
+                                </li>
                             </ul>
                         </div>
                         <a class="navbar-brand" href="#">
@@ -72,7 +75,12 @@
                 <h4 class="alt-font text-black text-center  letter-spacing-minus-1px margin-50px-bottom">
                     PUBLICACIÓN DE DOCUMENTOS - MONITOR UNIVERSITARIO</h4><br />
                 <div class="row m-0">
-
+					 <div class="col-md-2 col-sm-4 fw-bold" style="text-align: right;">
+                        Clave del Monitor:
+                    </div>
+                    <div class="col-md-4 col-sm-8">
+                        MO-01
+                    </div>
                     <div class="col-md-2 col-sm-4 fw-bold" style="text-align: right;">
                         Nombre:
                     </div>
@@ -98,12 +106,7 @@
                     <div class="col-md-4 col-sm-8">
                         LICENCIATURA EN INGENIERÍA EN RECURSOS HÍDRICOS
                     </div>                    
-					 <div class="col-md-2 col-sm-4 fw-bold" style="text-align: right;">
-                        Oficio de pago:
-                    </div>
-                    <div class="col-md-4 col-sm-8">
-                        <a href="./SecuenciasDidactivasProdEducativa.pdf" target="_blank"><i class="bi bi-file-earmark-pdf"></i>Oficio de pago - Informe parcial 2</a>
-                    </div>
+					
                     <div class="col-md-2 col-sm-4 fw-bold" style="text-align: right;">
                         Proyecto:
                     </div>
@@ -127,8 +130,14 @@
 
                 <br /><br />-->
 				<hr>
-                
-                <label for="seguroFacultativo" class="form-label mt-3 fw-bold">Publica el oficio firmado para el trámite del pago.
+               <label class="form-label mt-3 fw-bold">Folio: </label>
+				<input type="text" class="form-control form-text" id="folio" placeholder="Folio"
+                            required>				
+				<label class="form-label mt-3 fw-bold">Apoyo: </label>
+				<input type="text" class="form-control form-text" id="folio" placeholder="$"
+                            required>
+							
+               <!-- <label for="seguroFacultativo" class="form-label mt-3 fw-bold">Publica el oficio firmado para el trámite del pago.
                     <sup style="color: red; font-size: small;">*</sup>:</label>
                 <div class="fst-italic fw-lighter">En formato PDF</div>
                 <input type="file" class="form-control form-text" id="seguroFacultativo" required>
@@ -156,12 +165,12 @@
                     <label class="form-check-label" for="exampleRadios2">
                         Constancia de participación
                     </label>
-                </div>
+                </div>-->
 
             </div>
             <div class="row m-0">
                 <div class="col-12 text-center my-4">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="window.location.href='listadoInformes.html'">Publicar documento</button>                    
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="window.location.href='listadoInformes.html'">Registrar información</button>                    
                 </div>
 
             </div><br />
