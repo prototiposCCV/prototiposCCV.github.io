@@ -95,7 +95,11 @@
 						<td><a href="./SecuenciasDidactivasProdEducativa.pdf" target="_blank">Solicitud <i class="bi bi-file-earmark-pdf"></i></a></td>
 						<td>PMU-01 Secuencias didácticas para la producción educativa digital en licenciaturas de ingeniería.</td>
                         <td>En proceso</td>
-                        <td><button type="button" class="btn btn-outline-primary btn-sm" onclick="window.location.href='./registrarMonitor.html'">Atender solicitudes de monitor</button></td>
+                        <td><button type="button" class="btn btn-outline-primary btn-sm" onclick="window.location.href='./registrarMonitor.html'">Aceptar solicitud</button>
+						<button type="button" class="btn btn-outline-danger btn-sm" data-bs-toggle="modal"
+                            data-bs-target="#solicitarAjustes">Rechazar solicitud</button>
+							
+						</td>
                         <td></td>
                       </tr>
 					  <tr>                       
@@ -197,6 +201,23 @@
         </div>
     </div>
 
+								 <!-- Modal Ajustes-->
+    <div class="modal fade" id="solicitarAjustes" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Solicitud rechazada</h1>                    
+                </div>
+                <div class="modal-body">
+                    <textarea style="width: 100%;"></textarea>
+                    <span class="fst-italic fw-lighter link-danger">Se enviará un correo al monitor y al responsable del proyecto indicando la razón del rechazo de la solicitud.</span>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Enviar</button> <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
 
