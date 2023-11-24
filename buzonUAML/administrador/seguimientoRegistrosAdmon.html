@@ -64,8 +64,8 @@
 										<li><a class="dropdown-item" href="../usuarios/registroBuzonQueja.html">Reportes de quejas o eventualidades de violencia de género</a></li>
                                     </ul>
                                 </li>
-								 <li class="nav-item dropdown">
-                                     <a class="nav-link " href="./seguimientoRegistrosAdmon.html" role="button" >Seguimiento de registro (Admón)</a>                                   
+								<li class="nav-item dropdown">
+                                     <a class="nav-link " href="./seguimientoRegistrosAdmon.html" role="button" >Seguimiento de registro</a>                                   
                                 </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link " href="./reportesEnlace.html" role="button">Reportes</a>
@@ -73,19 +73,10 @@
                                 </li>
                             </ul>
                         </div>
-                        <a class="navbar-brand" href="../documentos/ficha.docx" target="_blank">
-                            <button class="btn btn-primary" type="button">
-                                Ficha primera cita
-                            </button>
-                        </a>
-                        <a class="navbar-brand" href="../documentos/formatoQueja.docx" target="_blank">
-                            <button class="btn btn-primary" type="button">
-                                Formato de queja
-                            </button>
-                        </a>
-                        <a class="navbar-brand" href="http://www.ler.uam.mx/es/Micrositios_UAML/BienestarUAML" target="_blank">
-                            <button class="btn btn-primary" type="button">
-                                Más información
+                        <a class="navbar-brand" href="#">
+                            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#demo">
+                                Ayuda
                             </button>
                         </a>
                     </div>
@@ -97,25 +88,27 @@
             <div class="container p-0">
                 <div class="row m-0">
                     <div class="col-md-12">
-                        <h4 class="alt-font text-black text-center letter-spacing-minus-1px margin-5px-bottom">
+                        <h4 class="alt-font text-black text-center  letter-spacing-minus-1px margin-5px-bottom">
                             FORMULARIO DE BÚSQUEDA</h2>
                         <form class="row g-3 align-items-start">
 
                             <div class="col-md-6">
-                                <label for="folio" class="form-label fw-bold">Folio:</label>
+                                <label for="folio" class="form-label">Folio</label>
                                 <input type="text" class="form-control" size="8" id="nombre" placeholder="Folio">
                             </div>
                             <div class="col-md-6">
-                                <label for="tipo" class="form-label fw-bold">Tipo:</label>
+                                <label for="tipo" class="form-label">Tipo</label>
                                 <select class="form-select form-control" required id="tipo">
                                     <option>--</option>
-                                    <option>Comentario, sugerencia u otro</option>
-                                    <option>Ayuda psicológica</option>
-                                    <option>Reportes de quejas o eventualidades de violencia de género</option>                                   
+                                    <option>Ayuda</option>
+                                    <option>Quejas/Eventualidades: Alumnado</option>
+                                    <option>Quejas/Eventualidades: Profesorado</option>
+                                    <option>Quejas/Eventualidades: Personal administrativo</option>
+                                    <option>Quejas/Eventualidades: Proveedores de servicios</option>
                                 </select>
                             </div>
                             <div class="col-md-6">
-                                <label for="trimestre" class="form-label fw-bold">Trimestre:</label>
+                                <label for="trimestre" class="form-label">Trimestre</label>
                                 <select class="form-select form-control" required id="trimestre">
                                     <option>--</option>
                                     <option>23-I</option>
@@ -124,12 +117,12 @@
                             </div>
 
                             <div class="col-md-6">
-                                <label for="solicitante" class="form-label fw-bold">Persona solicitante:</label>
+                                <label for="solicitante" class="form-label">Persona solicitante:</label>
                                 <input type="text" class="form-control" id="solicitante"
                                     placeholder="Nombre o matricula o número económico">
                             </div>
                             <div class="col-md-6">
-                                <label for="denunciada" class="form-label fw-bold">Persona denunciada:</label>
+                                <label for="denunciada" class="form-label">Persona denunciada</label>
                                 <input type="text" class="form-control" id="denunciada"
                                     placeholder="Nombre o matricula o número económico">
                             </div>
@@ -164,7 +157,8 @@
 
                                         <th>Tipo</th>
                                         <th>Historial de seguimiento</th>
-                                        <th>Historial de Documentos</th>                                        
+                                        <th>Historial de Documentos</th>
+                                        <th>Personas involucradas</th>
                                         <th>Delegar solicitud</th>
                                         <th>Estado</th>
                                         <th></th>
@@ -191,7 +185,11 @@
                                     <td class="text-center"><button class="btn btn-primary btn-sm" type="button"
                                             onclick="window.location='accesoHistDoc.html'">
                                             Acceso
-                                        </button></td>                                    
+                                        </button></td>
+                                    <td class="text-center"><button class="btn btn-primary btn-sm" type="button"
+                                            onclick="window.location='personasInvolucradas.html'">
+                                            Acceso
+                                        </button></td>
                                     <td class="text-center"><button class="btn btn-primary btn-sm" type="button"
                                             onclick="window.location='delegarSolicitud.html'">
                                             Delegar
@@ -231,7 +229,53 @@
                 <p>Universidad Autonoma Metropolitana Unidad Lerma,
                     Avenida de las Granjas #123, col. El panteón </p>
             </div>
-            
+            <div class="offcanvas offcanvas-end" id="demo">
+                <div class="offcanvas-header">
+                    <h1 class="offcanvas-title">Heading</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <p>Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.
+                        Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some
+                        text lorem ipsum.
+                        Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some
+                        text lorem ipsum.
+                        Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some
+                        text lorem ipsum.
+                        Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.
+
+                        Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.
+                        Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some
+                        text lorem ipsum.
+                        Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some
+                        text lorem ipsum.
+                        Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some
+                        text lorem ipsum.
+                        Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.
+                        Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.
+                        Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some
+                        text lorem ipsum.
+                        Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some
+                        text lorem ipsum.
+                        Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some
+                        text lorem ipsum.
+                        Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.
+                        Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.
+                        Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some
+                        text lorem ipsum.
+                        Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some
+                        text lorem ipsum.
+                        Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some
+                        text lorem ipsum.
+                        Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.
+
+                        <img src="img/img_avatar1.png" alt="Logo" style="width:40px;" class="rounded-pill">
+                    </p>
+                    <p>Some text lorem ipsum.</p>
+                    <p>Some text lorem ipsum.</p>
+                    <button class="btn btn-secondary" type="button">A Button</button>
+                </div>
+            </div>
         </div>
     </div>
     </div>

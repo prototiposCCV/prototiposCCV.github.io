@@ -5,11 +5,8 @@
     <title>Prototipo Buzón Quejas</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <link rel="icon" type="image/x-icon" href="../img/logoBuzon.png">
 </head>
 
@@ -46,43 +43,26 @@
                                 </li>
 
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button"
-                                        data-bs-toggle="dropdown">Registro</a>
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Registro</a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item"
-                                                href="../usuarios/registroBuzonAyuda.html">Comentario o sugerencia u
-                                                otro</a></li>
-                                        <li><a class="dropdown-item"
-                                                href="../usuarios/registroBuzonAyudaPsicologica.html">Ayuda
-                                                psicológica</a></li>
-                                        <li><a class="dropdown-item" href="../usuarios/registroBuzonQueja.html">Reportes
-                                                de quejas o eventualidades de violencia de género</a></li>
+                                        <li><a class="dropdown-item" href="../usuarios/registroBuzonAyuda.html">Comentario o sugerencia u otro</a></li>
+                                        <li><a class="dropdown-item" href="../usuarios/registroBuzonAyudaPsicologica.html">Ayuda psicológica</a></li>
+										<li><a class="dropdown-item" href="../usuarios/registroBuzonQueja.html">Reportes de quejas o eventualidades de violencia de género</a></li>
                                     </ul>
-                                </li>                                
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link " href="./seguimientoRegistrosAdmon.html"
-                                        role="button">Seguimiento de registro (Admón)</a>
+                                </li>
+								  <li class="nav-item dropdown">
+                                     <a class="nav-link " href="./seguimientoRegistrosAdmon.html" role="button" >Seguimiento de registro</a>                                   
                                 </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link " href="./reportesEnlace.html" role="button">Reportes</a>
 
-                                </li>
+                                </li>                               
                             </ul>
                         </div>
-                        <a class="navbar-brand" href="../documentos/ficha.docx" target="_blank">
-                            <button class="btn btn-primary" type="button">
-                                Ficha primera cita
-                            </button>
-                        </a>
-                        <a class="navbar-brand" href="../documentos/formatoQueja.docx" target="_blank">
-                            <button class="btn btn-primary" type="button">
-                                Formato de queja
-                            </button>
-                        </a>
-                        <a class="navbar-brand" href="http://www.ler.uam.mx/es/Micrositios_UAML/BienestarUAML"
-                            target="_blank">
-                            <button class="btn btn-primary" type="button">
-                                Más información
+                        <a class="navbar-brand" href="#">
+                            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#demo">
+                                Ayuda
                             </button>
                         </a>
                     </div>
@@ -99,8 +79,7 @@
                     <div class="col-md-12">
                         <form class="row g-3 align-items-start">
                             <div class="col-md-4">
-                                <label for="tipo" class="form-label mt-3 fw-bold">Tipo de la solicitud<sup
-                                        style="font-size: small; color:red;">*</sup>:</label>
+                                <label for="tipo" class="form-label mt-3">Tipo de la solicitud:</label>
                                 <select class="form-select form-control" required id="tipo">
                                     <option></option>
                                     <option>AYUDA PSICOLÓGICA</option>
@@ -109,8 +88,7 @@
                                     <option>QUEJA/EVENTUALIDAD: PERSONAL ADMINISTRATIVO</option>
                                     <option>QUEJA/EVENTUALIDAD: PROVEEDORES DE SERVICIOS</option>
                                 </select>
-                                <label for="responsable" class="form-label mt-3 fw-bold">Nuevo responsable<sup
-                                        style="font-size: small; color:red;">*</sup>:</label>
+                                <label for="responsable" class="form-label mt-3">Nuevo responsable</label>
                                 <select class="form-select form-control" required id="responsable">
                                     <option>--</option>
                                     <option>Secretaría Académica DCBI</option>
@@ -120,28 +98,13 @@
                                     <option>Oficina de Proyectos Integrales para el Bienestar Universitario
                                     </option>
                                     <option>Abogado Delegado de la Unidad</option>
-                                    <option>Atención psicológica</option>
-                                    <option>Servicio médico</option>
                                 </select>
                             </div>
                             <div class="col-md-5">
-                                <label for="observaciones" class="form-label mt-3 fw-bold">Observaciones<sup
-                                        style="font-size: small; color:red;">*</sup>:</label>
+                                <label for="observaciones" class="form-label mt-3">Observaciones</label>
                                 <textarea class="form-control" id="observaciones" rows="6"></textarea>
-                                <span class="fst-italic fw-lighter link-warning">El nuevo responsable recibirá una
-                                    notificación por correo</span>
                             </div>
-
-                            <div class="col-md-3">
-                                <div class="form-group">
-                                    <label for="mensaje" class="form-label mt-3 fw-bold">Emails adicionales para
-                                        notificaciones:<div class="fst-italic fw-lighter">(Llenar sólo si se desea
-                                            notificar a personas adicionales
-                                            al nuevo responsable)</div></label>
-                                    <textarea class="form-control" id="mensaje" rows="2">abc@correo.ler.uam.mx, cde@correo.ler.uam.mx,
-            efg@correo.ler.uam.mx
-                                        </textarea>
-                                </div>
+                            <div class="col-md-3">                                
                                 <button type="submit" class="btn btn-primary btn-sm mt-5">Delegar solicitud</button>
                             </div>
                         </form>
@@ -176,7 +139,53 @@
                     <p>Universidad Autonoma Metropolitana Unidad Lerma,
                         Avenida de las Granjas #123, col. El panteón </p>
                 </div>
+                <div class="offcanvas offcanvas-end" id="demo">
+                    <div class="offcanvas-header">
+                        <h1 class="offcanvas-title">Heading</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <p>Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.
+                            Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some
+                            text lorem ipsum.
+                            Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some
+                            text lorem ipsum.
+                            Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some
+                            text lorem ipsum.
+                            Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.
 
+                            Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.
+                            Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some
+                            text lorem ipsum.
+                            Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some
+                            text lorem ipsum.
+                            Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some
+                            text lorem ipsum.
+                            Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.
+                            Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.
+                            Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some
+                            text lorem ipsum.
+                            Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some
+                            text lorem ipsum.
+                            Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some
+                            text lorem ipsum.
+                            Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.
+                            Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.
+                            Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some
+                            text lorem ipsum.
+                            Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some
+                            text lorem ipsum.
+                            Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some
+                            text lorem ipsum.
+                            Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.
+
+                            <img src="img/img_avatar1.png" alt="Logo" style="width:40px;" class="rounded-pill">
+                        </p>
+                        <p>Some text lorem ipsum.</p>
+                        <p>Some text lorem ipsum.</p>
+                        <button class="btn btn-secondary" type="button">A Button</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

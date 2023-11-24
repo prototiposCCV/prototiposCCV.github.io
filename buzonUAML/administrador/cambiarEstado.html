@@ -58,30 +58,20 @@
                                         <li><a class="dropdown-item" href="../usuarios/registroBuzonQueja.html">Reportes
                                                 de quejas o eventualidades de violencia de género</a></li>
                                     </ul>
-                                </li>                                
+                                </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link " href="./seguimientoRegistrosAdmon.html"
-                                        role="button">Seguimiento de registro (Admón)</a>
+                                        role="button">Seguimiento de registro</a>
                                 </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link " href="./reportesEnlace.html" role="button">Reportes</a>
                                 </li>
                             </ul>
                         </div>
-                        <a class="navbar-brand" href="../documentos/ficha.docx" target="_blank">
-                            <button class="btn btn-primary" type="button">
-                                Ficha primera cita
-                            </button>
-                        </a>
-                        <a class="navbar-brand" href="../documentos/formatoQueja.docx" target="_blank">
-                            <button class="btn btn-primary" type="button">
-                                Formato de queja
-                            </button>
-                        </a>
-                        <a class="navbar-brand" href="http://www.ler.uam.mx/es/Micrositios_UAML/BienestarUAML"
-                            target="_blank">
-                            <button class="btn btn-primary" type="button">
-                                Más información
+                        <a class="navbar-brand" href="#">
+                            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#demo">
+                                Ayuda
                             </button>
                         </a>
                     </div>
@@ -98,44 +88,30 @@
                     <div class="col-md-12">
                         <form>
                             <div class="row m-0">
-
-                                <div class="col-md-4">
-                                    <label for="estado" class="form-label fw-bold">Nuevo estado <sup
-                                            style="font-size: small; color:red;">*</sup>:</label><br />
-                                    <select class="form-select form-control" required id="estado" onchange="Number(this.value)===Number(1)?document.getElementById('bloqueDictamen').style.display='block':document.getElementById('bloqueDictamen').style.display='none'">
-                                        <option></option>
-                                        <option>REGISTRADA</option>
-                                        <option>INICIADA</option>
-                                        <option>RATIFICADA</option>
-                                        <option>EN PROCESO</option>
-                                        <option>CANCELADA</option>
-                                        <option value="1">DICTAMINADA</option>
-                                        <option>EN RECONSIDERACIÓN</option>
-                                        <option>CONCLUIDA</option>
-                                    </select>
-                                    <span class="fst-italic fw-lighter link-warning">Caso especial DICTAMINADA</span>
-                                    <div id="bloqueDictamen" style="display:none;">
-                                        <label for="dictamen" class="form-label fw-bold mt-3">Subir dictamen<sup
-                                                style="font-size: small; color: red;">*</sup>:</label><br />
-                                        <input id="dictamen" class="form-control" type="file">
-                                    </div>
+                                
+                                <div class="col-md-4">  
+                                        <label for="estado" class="form-label">Nuevo estado:</label><br/>
+                                        <select class="form-select form-control" required id="estado">
+                                            <option></option>
+                                            <option>REGISTRADA</option>
+                                            <option>INICIADA</option>
+                                            <option>RATIFICADA</option>
+                                            <option>EN PROCESO</option>
+                                            <option>CANCELADA</option>
+                                            <option>DICTAMINADA</option>
+                                            <option>EN RECONSIDERACIÓN</option>
+                                            <option>CONCLUIDA</option>                                            
+                                        </select>
                                 </div>
-                                <div class="col-md-5">
-                                    <label for="comentario" class="form-label fw-bold">Comentario<sup
-                                            style="font-size: small; color: red;">*</sup>:</label><br />
+                                <div class="col-md-5"> 
+                                    <label for="comentario" class="form-label">Comentario:</label><br/>                                
                                     <textarea id="comentario" class="w-100"></textarea>
-                                    <div class="form-group">
-                                        <label for="mensaje" class="form-label mt-3 fw-bold">Emails adicionales para notificaciones:<div class="fst-italic fw-lighter">(Llenar sólo si se desea notificar a personas adicionales a la persona en situación de víctima)</div></label>
-                                        <textarea class="form-control" id="mensaje" rows="2">abc@correo.ler.uam.mx, cde@correo.ler.uam.mx,
-efg@correo.ler.uam.mx
-                                        </textarea>
-                                    </div>
                                 </div>
                                 <div class="col-md-3">
                                     <div class="form-group">
-                                        
-                                        <button type="submit" class="btn btn-primary btn-sm btn-block"
-                                            id="enviar">Asignar estado <i class="fa fa-paper-plane"></i></button>
+                                        <label for="comentario" class="form-label fst-italic link-warning">Se enviará un correo al usuario para notificarle el estado de su solicitud</label><br/>
+                                        <button type="submit" class="btn btn-primary btn-sm btn-block" id="enviar">Asignar estado <i
+                                                class="fa fa-paper-plane"></i></button>
                                     </div>
 
                                 </div>
@@ -175,7 +151,53 @@ efg@correo.ler.uam.mx
                     <p>Universidad Autonoma Metropolitana Unidad Lerma,
                         Avenida de las Granjas #123, col. El panteón </p>
                 </div>
+                <div class="offcanvas offcanvas-end" id="demo">
+                    <div class="offcanvas-header">
+                        <h1 class="offcanvas-title">Heading</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <p>Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.
+                            Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some
+                            text lorem ipsum.
+                            Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some
+                            text lorem ipsum.
+                            Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some
+                            text lorem ipsum.
+                            Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.
 
+                            Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.
+                            Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some
+                            text lorem ipsum.
+                            Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some
+                            text lorem ipsum.
+                            Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some
+                            text lorem ipsum.
+                            Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.
+                            Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.
+                            Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some
+                            text lorem ipsum.
+                            Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some
+                            text lorem ipsum.
+                            Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some
+                            text lorem ipsum.
+                            Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.
+                            Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.
+                            Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some
+                            text lorem ipsum.
+                            Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some
+                            text lorem ipsum.
+                            Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some
+                            text lorem ipsum.
+                            Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.
+
+                            <img src="img/img_avatar1.png" alt="Logo" style="width:40px;" class="rounded-pill">
+                        </p>
+                        <p>Some text lorem ipsum.</p>
+                        <p>Some text lorem ipsum.</p>
+                        <button class="btn btn-secondary" type="button">A Button</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
