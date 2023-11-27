@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Prototipo Buzón Quejas</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="../img/logoBuzon.png">
+</head>
+
+<body>
+    <div class="container-fluid  mt-3 text-center">
+        <div class="row">
+            <div class="col-sm-3 p-2 ">
+                <img class="img-fluid" src="../img/ccv.jpg" alt="New York">
+            </div>
+            <div class="col-sm-9 p-2 ">
+                <h4>SISTEMA DE GESTION ADMINISTRATIVA</h4>
+                <p>Coordinación de Campus Virtual.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mt-3">
+        <div class="row">
+            <div class="col-sm-12 p-3 mt-1 text-white text-break">
+                <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">
+                            <img src="../img/img_avatar1.png" alt="Logo" style="width:40px;" class="rounded-pill">
+
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapsibleNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../index.html">Inicio</a>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Registro</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="../usuarios/registroBuzonAyuda.html">Comentario o sugerencia u otro</a></li>
+                                        <li><a class="dropdown-item" href="../usuarios/registroBuzonAyudaPsicologica.html">Ayuda psicológica</a></li>
+										<li><a class="dropdown-item" href="../usuarios/registroBuzonQueja.html">Reportes de quejas o eventualidades de violencia de género</a></li>
+                                    </ul>
+                                </li>
+								 <li class="nav-item dropdown">
+                                     <a class="nav-link " href="../usuarios/seguimientoRegistros.html" role="button" >Seguimiento de registro</a>                                   
+                                </li>
+								 <li class="nav-item dropdown">
+                                     <a class="nav-link " href="./seguimientoRegistrosAdmon.html" role="button" >Seguimiento de registro (Admón)</a>                                   
+                                </li>                                
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link " href="./reportesEnlace.html" role="button">Reportes</a>
+
+                                </li>                               
+                            </ul>
+                        </div>
+                        <a class="navbar-brand" href="http://www.ler.uam.mx/es/Micrositios_UAML/BienestarUAML" target="_blank">
+                            <button class="btn btn-primary" type="button">
+                                Más información
+                            </button>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+
+        </div>
+        <section class="big-section bg-white">
+            <div class="container p-0">
+                <h4 class="alt-font text-black text-center  letter-spacing-minus-1px margin-50px-bottom">
+                    PERSONAS QUE SERÁN NOTIFICADAS</h4><BR />
+                <div class="row m-0">
+                    <div class="col-md-12 text-center">
+                        <div class="form-group">
+                            <table class="table">
+
+                                <tr>
+                                    <th>Tipo</th>
+                                    <th>Nombre</th>
+									<th>Email</th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <td>Abogado Delegado</td>
+                                    <td>Lic. Juan Carlos (22445)</td>
+									<td>jhernandez@correo.ler.uam.mx</td>
+                                    <td></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+    </div>
+    </div>
+    </section>
+    <section class="big-section bg-white">
+        <div class="container p-0">
+            <h4 class="alt-font text-black text-center  letter-spacing-minus-1px margin-50px-bottom">
+                Registro de nuevos involucrados</h4><br /><br />
+            <div class="row m-0">
+                <div class="col-md-12">
+                    <form>
+                        <div class="row m-0">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="nombre">Tipo</label>
+                                    <select class="form-select form-control" required>
+                                        <option>--</option>
+                                        <option>Persona en situación de Víctima</option>
+                                        <option>Persona presunta responsable</option>
+                                        <option>Coordinador de la Comisión de Faltas</option>
+                                        <option>Secretaría Académica DCBI</option>
+                                        <option>Secretaría Académica DCBS</option>
+                                        <option>Secretaría Académica DCSH</option>
+                                        <option>Secretaría de Unidad</option>
+                                        <option>Abogado Delegado de la Unidad</option>
+										<option>Otro</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="telefono">Email</label>
+                                    <input type="tel" class="form-control" id="telefono"
+                                        placeholder="Obligatorio para 'OTRO'">
+
+                                </div>
+
+                            </div>
+							<div class="col-md-5">
+                                <div class="form-group">	
+									<br/><br/>
+									<strong class="form-label">MENSAJE</strong><br/>
+									<textarea class="form-control" id="mensaje" rows="3"></textarea>
+									<span class="fst-italic fw-lighter link-warning">En la aplicación definitiva este campo se expandirá
+										verticalmente conforme el usuario vaya capturando texto</span>  
+								</div>
+							</div>
+							<div class="col-md-5">
+                                <div class="form-group">
+									<br/><br/>
+									<strong class="form-label">DOCUMENTOS ADJUNTOS</strong><br/>
+									 Selecciona los documentos que deseas anexar al correo:
+									<div class="row">
+										<div class="form-check form-check-inline">
+											<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+											<label class="form-check-label" for="inlineCheckbox1"><a href="#">SBA-001-doc1.pdf</a> - Registro de la Solicitud</label>
+										</div>
+										<div class="form-check form-check-inline">
+											<input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+											<label class="form-check-label" for="inlineCheckbox2"><a href="#">SBA-001-doc2.pdf</a> - Evidencia Digital </label>
+										</div>		
+										<div class="form-check form-check-inline">
+											<input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+											<label class="form-check-label" for="inlineCheckbox2"><a href="#">SBA-001-doc3.pdf</a> - Evidencia Digital </label>
+										</div>		
+										<div class="form-check form-check-inline">
+											<input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+											<label class="form-check-label" for="inlineCheckbox2"><a href="#">SBA-001-doc4.pdf</a> - Descripción de los hechos</label><br>
+										</div>		
+										<div class="form-check form-check-inline">
+											<input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+											<label class="form-check-label" for="inlineCheckbox2"><a href="#">SBA-001-doc3.pdf</a> - Evidencia Digital </label><br>
+										</div>		
+										<div class="form-check form-check-inline">
+											<input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+											<label class="form-check-label" for="inlineCheckbox2"><a href="#">SBA-001-doc4.pdf</a> - Descripción de los hechos</label>
+										</div>		
+									</div>		
+								</div>
+							</div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 p-3 ">
+                <div class="container mt-3 table-responsive">
+                    <div class="text-center">
+                        </br>
+                        <button class="btn btn-primary btn-sm" type="button"
+                            onclick="window.location='seguimientoRegistrosAdmon.html'">
+                            Envío de la notificación
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+    </section>
+
+    <div class="container-fluid mt-1 text-center">
+        <div class="row">
+            <hr>
+            <div class="col-sm-6 p-2 ">
+
+                <h4>Footer</h4>
+                <p>Coordinación de Campus Virtual.</p>
+            </div>
+            <div class="col-sm-6 p-2 ">
+
+                <h4>Footer</h4>
+                <p>Coordinación de Campus Virtual.</p>
+            </div>
+            <div class="col-sm-12 p-2 ">
+
+
+                <p>Universidad Autonoma Metropolitana Unidad Lerma,
+                    Avenida de las Granjas #123, col. El panteón </p>
+            </div>
+            
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>

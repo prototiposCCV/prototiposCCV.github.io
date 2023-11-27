@@ -122,7 +122,42 @@
                                 </select>
                             </div>
                             <div class="col-md-6">
-                                <label for="trimestre" class="form-label fw-bold">Trimestre:</label>
+                                <label for="denunciada" class="form-label fw-bold">Coordinación:</label>
+                                <select class="form-select form-control" required id="tipo">
+                                    <option>--</option>
+                                    <option>Coord. de Campus Virtual (CCV)</option>
+                                    <option>Coord. de Planeación y e Información Institucional</option>
+                                    <option>Coord. de Recursos Materiales</option> 
+                                </select>
+                            </div>
+							<div class="col-md-6">
+                                <label for="denunciada" class="form-label fw-bold">Tipo de Servicio:</label>
+                                <select class="form-select form-control" required id="tipo">
+                                    <option>--</option>
+                                    <option>Desarrollo de sistemas</option>
+                                    <option>Plataformas para aulas virtuales XAHNI y PADI</option>
+									<option>Aplicativo NADU 1,0</option>
+									<option>Aplicativo NADU 2.0</option>
+									<option>Portal Web</option>
+									<option>Micrositios</option>
+									<option>Sistema de Calidad</option>
+                                </select>
+                            </div>
+							<div class="col-md-6">
+                                <label for="trimestre" class="form-label fw-bold">Trimestre/Año:</label>
+                                <select class="form-select form-control" required id="trimestre">
+                                    <option>23</option>
+                                    <option>24</option>
+                                </select>
+								<select class="form-select form-control" required id="trimestre">
+                                    <option>--</option>
+                                    <option>I</option>
+                                    <option>O</option>
+									<option>P</option>
+                                </select>
+                            </div>
+							<div class="col-md-6">
+                                <label for="trimestre" class="form-label fw-bold">Año:</label>
                                 <select class="form-select form-control" required id="trimestre">
                                     <option>--</option>
                                     <option>23-I</option>
@@ -140,6 +175,7 @@
                                 <input type="text" class="form-control" id="denunciada"
                                     placeholder="Nombre o matricula o número económico">
                             </div>
+							
 
                             <div class="col-md-6">
                                 <button type="submit" class="btn btn-primary btn-sm btn-block">Buscar</button><br/>
@@ -178,8 +214,7 @@
                                     </tr>
                                 </thead>
                                 <tr>
-									<td><a href="#"><i class="bi bi-file-earmark-pdf"></i>RBA-01</a><br /><br/>
-											<button class="btn btn-primary btn-sm" type="button"  onclick="window.location='editarBuzonQueja.html'">
+									<td><a href="#"><i class="bi bi-file-earmark-pdf"></i>RBA-01</a><br/><button class="btn btn-primary btn-sm" type="button"  onclick="window.location='editarBuzonAyudaPsicologica.html'">
                                                 Editar registro
                                             </button>
 									</td>
@@ -192,7 +227,89 @@
                                         LIC. EN PSICOLOGÍA BIOMÉDICA<br />
                                         1293847@correo.ler.uam.mx
                                     </td>
-                                    <td><strong>FALTA VIOLENCIA DE GÉNERO</strong>
+                                    <td><strong>FALTA/EVENTUALIDAD EMPLEADOS</strong>
+                                        </button>
+                                    </td>
+                                    <td class="text-center"><button class="btn btn-primary btn-sm" type="button"
+                                            onclick="window.location='registrarComentarioAdmon.html'">
+                                            Registrar comentario
+                                        </button></td>
+                                    <td class="text-center"><button class="btn btn-primary btn-sm" type="button"
+                                            onclick="window.location='accesoHistDoc.html'">
+                                            Acceso
+                                        </button></td>                                    
+                                    <td class="text-center"><button class="btn btn-primary btn-sm" type="button"
+                                            onclick="window.location='notificarInvolucrados.html'">
+                                            Notificar
+                                        </button></td>
+							        <td class="text-center"><button class="btn btn-primary btn-sm" type="button"
+                                            onclick="window.location='delegarSolicitud.html'">
+                                            Delegar
+                                        </button></td>
+                                    <td class="text-center">
+                                        <strong>EN PROCESO</strong>
+                                        <button class="btn btn-primary btn-sm" type="button"
+                                            onclick="window.location='cambiarEstado.html'">
+                                            Cambiar estado
+                                        </button>
+                                    </td>
+                                </tr>
+						        <tr>
+									<td><a href="#"><i class="bi bi-file-earmark-pdf"></i>RBA-01</a><br/><button class="btn btn-primary btn-sm" type="button"  onclick="window.location='editarBuzonAyudaPsicologica.html'">
+                                                Editar registro
+                                            </button>
+									</td>
+									<td>
+                                            01/01/2023<br/>
+											Trimestre: 23-I
+                                    </td>                                    
+                                    <td><strong>JUAN ALVAREZ ROBLES</strong>
+                                        <hr />
+                                        LIC. EN PSICOLOGÍA BIOMÉDICA<br />
+                                        1293847@correo.ler.uam.mx
+                                    </td>
+                                    <td><strong>FALTA/EVENTUALIDAD EMPLEADOS</strong>
+                                        </button>
+                                    </td>
+                                    <td class="text-center"><button class="btn btn-primary btn-sm" type="button"
+                                            onclick="window.location='registrarComentarioAdmon.html'">
+                                            Registrar comentario
+                                        </button></td>
+                                    <td class="text-center"><button class="btn btn-primary btn-sm" type="button"
+                                            onclick="window.location='accesoHistDoc.html'">
+                                            Acceso
+                                        </button></td>                                    
+                                    <td class="text-center"><button class="btn btn-primary btn-sm" type="button"
+                                            onclick="window.location='notificarInvolucrados.html'">
+                                            Notificar
+                                        </button></td>
+							        <td class="text-center"><button class="btn btn-primary btn-sm" type="button"
+                                            onclick="window.location='delegarSolicitud.html'">
+                                            Delegar
+                                        </button></td>
+                                    <td class="text-center">
+                                        <strong>EN PROCESO</strong>
+                                        <button class="btn btn-primary btn-sm" type="button"
+                                            onclick="window.location='cambiarEstado.html'">
+                                            Cambiar estado
+                                        </button>
+                                    </td>
+                                </tr>
+						        <tr>
+									<td><a href="#"><i class="bi bi-file-earmark-pdf"></i>RBA-01</a><br/><button class="btn btn-primary btn-sm" type="button"  onclick="window.location='editarBuzonAyudaPsicologica.html'">
+                                                Editar registro
+                                            </button>
+									</td>
+									<td>
+                                            01/01/2023<br/>
+											Trimestre: 23-I
+                                    </td>                                    
+                                    <td><strong>JUAN ALVAREZ ROBLES</strong>
+                                        <hr />
+                                        LIC. EN PSICOLOGÍA BIOMÉDICA<br />
+                                        1293847@correo.ler.uam.mx
+                                    </td>
+                                    <td><strong>FALTA/EVENTUALIDAD EMPLEADOS</strong>
                                         </button>
                                     </td>
                                     <td class="text-center"><button class="btn btn-primary btn-sm" type="button"
@@ -221,9 +338,6 @@
                                 </tr>
 						        <tr>
 									<td><a href="#"><i class="bi bi-file-earmark-pdf"></i>RBA-01</a><br /><br/>
-											<button class="btn btn-primary btn-sm" type="button"  onclick="window.location='editarBuzonAyuda.html'">
-                                                Editar registro
-                                            </button>
 									</td>
 									<td>
                                             01/01/2023<br/>
@@ -234,7 +348,7 @@
                                         LIC. EN PSICOLOGÍA BIOMÉDICA<br />
                                         1293847@correo.ler.uam.mx
                                     </td>
-                                    <td><strong>BUZÓN SERVICIOS</strong><br/></br/>SUGERENCIA<br/>CCV <br/> WebMaster
+                                    <td><strong>BUZÓN SERVICIOS</strong><br/><br/>SUGERENCIA<br/>CCV <br/> Portal Web 
                                         </button>
                                     </td>
                                     <td class="text-center"><button class="btn btn-primary btn-sm" type="button"
@@ -245,21 +359,18 @@
                                             onclick="window.location='accesoHistDoc.html'">
                                             Acceso
                                         </button></td>                                    
-                                    <td class="text-center"></td>
+                                    <td class="text-center"><button class="btn btn-primary btn-sm" type="button"
+                                            onclick="window.location='notificarInvolucrados.html'">
+                                            Notificar
+                                        </button></td>
                                     <td class="text-center"></td>
                                     <td class="text-center">
                                         <strong>EN PROCESO</strong>
-                                        <button class="btn btn-primary btn-sm" type="button"
-                                            onclick="window.location='cambiarEstado.html'">
-                                            Cambiar estado
-                                        </button>
                                     </td>
                                 </tr>
 				                <tr>
 									<td><a href="#"><i class="bi bi-file-earmark-pdf"></i>RBA-01</a><br /><br/>
-											<button class="btn btn-primary btn-sm" type="button"  onclick="window.location='editarBuzonAyudaPsicologica.html'">
-                                                Editar registro
-                                            </button>
+											
 									</td>
 									<td>
                                             01/01/2023<br/>
@@ -285,16 +396,44 @@
                                             onclick="window.location='notificarInvolucrados.html'">
                                             Notificar
                                         </button></td>
-                                    <td class="text-center"><button class="btn btn-primary btn-sm" type="button"
-                                            onclick="window.location='delegarSolicitud.html'">
-                                            Delegar
-                                        </button></td>
+                                    <td class="text-center"></td>
                                     <td class="text-center">
                                         <strong>EN PROCESO</strong>
-                                        <button class="btn btn-primary btn-sm" type="button"
-                                            onclick="window.location='cambiarEstado.html'">
-                                            Cambiar estado
+                                       
+                                    </td>
+                                </tr>
+								<tr>
+									<td><a href="#"><i class="bi bi-file-earmark-pdf"></i>RBA-01</a><br /><br/>
+											
+									</td>
+									<td>
+                                            01/01/2023<br/>
+											Trimestre: 23-I
+                                    </td>                                    
+                                    <td><strong>JUAN ALVAREZ ROBLES</strong>
+                                        <hr />
+                                        LIC. EN PSICOLOGÍA BIOMÉDICA<br />
+                                        1293847@correo.ler.uam.mx
+                                    </td>
+                                    <td><strong>FALTA DE VIOLENCIA DE GÉNERO</strong>
                                         </button>
+                                    </td>
+                                    <td class="text-center"><button class="btn btn-primary btn-sm" type="button"
+                                            onclick="window.location='registrarComentarioAdmon.html'">
+                                            Registrar comentario
+                                        </button></td>
+                                    <td class="text-center"><button class="btn btn-primary btn-sm" type="button"
+                                            onclick="window.location='accesoHistDoc.html'">
+                                            Acceso
+                                        </button></td>                                    
+                                    <td class="text-center"><button class="btn btn-primary btn-sm" type="button"
+                                            onclick="window.location='notificarInvolucrados.html'">
+                                            Notificar
+                                        </button></td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center">
+                                        <strong>EN PROCESO</strong>
+                                       
                                     </td>
                                 </tr>
                             </table>

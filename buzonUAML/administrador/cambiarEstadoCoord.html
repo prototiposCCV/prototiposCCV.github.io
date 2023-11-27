@@ -65,7 +65,6 @@
                                 </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link " href="./reportesEnlace.html" role="button">Reportes</a>
-
                                 </li>
                             </ul>
                         </div>
@@ -92,71 +91,66 @@
         </div>
 
         <section class="big-section bg-white">
-            <div class="container p-0">
+            <div class="container p-0"><br /><br />
                 <h4 class="alt-font text-black text-center  letter-spacing-minus-1px margin-50px-bottom">
-                    ASIGNAR RESPONSABLE PARA ATENDER LA SOLICITUD</h4><BR />
+                    CAMBIO DE ESTADO DE LA SOLICITUD</h4><BR />
                 <div class="row m-0">
                     <div class="col-md-12">
-                        <form class="row g-3 align-items-start">
-                            <div class="col-md-4">
-                                <label for="tipo" class="form-label mt-3 fw-bold">Tipo de la solicitud<sup
-                                        style="font-size: small; color:red;">*</sup>:</label>
-                                <select class="form-select form-control" required id="tipo">
-                                    <option></option>
-                                    <option>AYUDA PSICOLÓGICA</option>
-                                    <option>QUEJA/EVENTUALIDAD: ALUMNADO</option>
-                                    <option>QUEJA/EVENTUALIDAD: PROFESORADO</option>
-                                    <option>QUEJA/EVENTUALIDAD: PERSONAL ADMINISTRATIVO</option>
-                                    <option>QUEJA/EVENTUALIDAD: PROVEEDORES DE SERVICIOS</option>
-                                </select>
-                                <label for="responsable" class="form-label mt-3 fw-bold">Nuevo responsable<sup
-                                        style="font-size: small; color:red;">*</sup>:</label>
-                                <select class="form-select form-control" required id="responsable">
-                                    <option>--</option>
-                                    <option>Secretaría Académica DCBI</option>
-                                    <option>Secretaría Académica DCBS</option>
-                                    <option>Secretaría Académica DCSH</option>
-                                    <option>Secretaría de Unidad</option>
-                                    <option>Oficina de Proyectos Integrales para el Bienestar Universitario
-                                    </option>
-                                    <option>Abogado Delegado de la Unidad</option>
-                                    <option>Atención psicológica</option>
-                                    <option>Servicio médico</option>
-                                </select>
-                            </div>
-                            <div class="col-md-5">
-                                <label for="observaciones" class="form-label mt-3 fw-bold">Observaciones<sup
-                                        style="font-size: small; color:red;">*</sup>:</label>
-                                <textarea class="form-control" id="observaciones" rows="6"></textarea>
-                                <span class="fst-italic fw-lighter link-warning">El nuevo responsable recibirá una
-                                    notificación por correo</span>
-                            </div>
+                        <form>
+                            <div class="row m-0">
 
-                            <div class="col-md-3">
-                                <div class="form-group">
-                                    <label for="mensaje" class="form-label mt-3 fw-bold">Emails adicionales para
-                                        notificaciones:<div class="fst-italic fw-lighter">(Llenar sólo si se desea
-                                            notificar a personas adicionales
-                                            al nuevo responsable)</div></label>
-                                    <textarea class="form-control" id="mensaje" rows="2">abc@correo.ler.uam.mx, cde@correo.ler.uam.mx,
-            efg@correo.ler.uam.mx
-                                        </textarea>
+                                <div class="col-md-4">
+                                    <label for="estado" class="form-label fw-bold">Nuevo estado <sup
+                                            style="font-size: small; color:red;">*</sup>:</label><br />
+                                    <select class="form-select form-control" required id="estado" onchange="Number(this.value)===Number(1)?document.getElementById('bloqueDictamen').style.display='block':document.getElementById('bloqueDictamen').style.display='none'">
+                                        <option></option>
+                                        <option>REGISTRADA</option>
+                                        <option>ATENDIDA</option>
+                                        <option>CANCELADA</option>
+                                    </select>
+                                    
+                                    <div id="bloqueDictamen" style="display:none;">
+                                        <label for="dictamen" class="form-label fw-bold mt-3">Subir dictamen<sup
+                                                style="font-size: small; color: red;">*</sup>:</label><br />
+                                        <input id="dictamen" class="form-control" type="file">
+                                    </div>
                                 </div>
-                                
+                                <div class="col-md-5">
+                                    <label for="comentario" class="form-label fw-bold">Comentario<sup
+                                            style="font-size: small; color: red;">*</sup>:</label><br />
+                                    <textarea id="comentario" class="w-100"></textarea>
+                                    <div class="form-group">
+                                        <label for="mensaje" class="form-label mt-3 fw-bold">Emails adicionales para notificaciones:<div class="fst-italic fw-lighter">(Llenar sólo si se desea notificar a personas adicionales a la persona en situación de víctima)</div></label>
+                                        <textarea class="form-control" id="mensaje" rows="2">abc@correo.ler.uam.mx, cde@correo.ler.uam.mx,
+efg@correo.ler.uam.mx
+                                        </textarea>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        
+                                        <button type="submit" class="btn btn-primary btn-sm btn-block"
+                                            id="enviar">Asignar estado <i class="fa fa-paper-plane"></i></button>
+                                    </div>
+
+                                </div>
+
+
                             </div>
-                        </form>
-                        <br />
+                        </form><br /><br />
                         <div class="text-center">
-                            <button class="btn btn-primary btn-sm" type="button" class="mt-3"
+                            <button class="btn btn-primary btn-sm" type="button"
                                 onclick="window.location='seguimientoRegistrosAdmon.html'">
-                                Delegar solicitud
+                                Regresar
                             </button>
                         </div>
-                        <br />
                     </div>
+
                 </div>
             </div>
         </section>
+        <br /><br />
+
         <div class="container-fluid mt-1 text-center">
             <div class="row">
                 <hr>
