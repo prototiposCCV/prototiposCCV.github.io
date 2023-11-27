@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Prototipo Buzón Quejas</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="../img/logoBuzon.png">
+</head>
+
+<body>
+    <div class="container-fluid  mt-3 text-center">
+        <div class="row">
+            <div class="col-sm-3 p-2 ">
+                <img class="img-fluid" src="../img/ccv.jpg" alt="New York">
+            </div>
+            <div class="col-sm-9 p-2 ">
+                <h4>SISTEMA DE GESTION ADMINISTRATIVA</h4>
+                <p>Coordinación de Campus Virtual.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mt-3">
+        <div class="row">
+            <div class="col-sm-12 p-3 mt-1 text-white text-break">
+                <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">
+                            <img src="../img/img_avatar1.png" alt="Logo" style="width:40px;" class="rounded-pill">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapsibleNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../index.html">Inicio</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Registro</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="../coordinadores/registroBuzonAyuda.html">Comentario o sugerencia u otro</a></li>
+                                        <li><a class="dropdown-item" href="../coordinadores/registroBuzonAyudaPsicologica.html">Ayuda psicológica</a></li>
+										<li><a class="dropdown-item" href="../coordinadores/registroBuzonQueja.html">Reportes de quejas o eventualidades de violencia de género</a></li>
+                                    </ul>
+                                </li>
+								 <li class="nav-item dropdown">
+                                     <a class="nav-link " href="../coordinadores/seguimientoRegistrosCoordinadores.html" role="button" >Seguimiento de registro</a>                                   
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link " href="../coordinadores/reportesEnlace.html" role="button">Reportes</a>
+
+                                </li>
+                            </ul>
+                        </div>
+                        <a class="navbar-brand" href="../documentos/ficha.docx" target="_blank">
+                            <button class="btn btn-primary" type="button">
+                                Ficha primera cita
+                            </button>
+                        </a>
+                        <a class="navbar-brand" href="../documentos/formatoQueja.docx" target="_blank">
+                            <button class="btn btn-primary" type="button">
+                                Formato de queja
+                            </button>
+                        </a>
+                        <a class="navbar-brand" href="http://www.ler.uam.mx/es/Micrositios_UAML/BienestarUAML"
+                            target="_blank">
+                            <button class="btn btn-primary" type="button">
+                                Más información
+                            </button>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <section class="big-section bg-white">
+            <div class="container p-0">
+                <h4 class="alt-font text-black text-center  letter-spacing-minus-1px margin-50px-bottom">
+                    REGISTRO</h4><br />
+                <div class="row m-0">
+                    <div class="col-md-2 col-sm-4 fw-bold" style="text-align: right;">
+                        Fecha:
+                    </div>
+                    <div class="col-md-4 col-sm-8">
+                        12 de Agosto del 2023
+                    </div>
+                    <div class="col-md-2 col-sm-4 fw-bold" style="text-align: right;">
+                        Nombre:
+                    </div>
+                    <div class="col-md-4 col-sm-8">
+                        JUANITO PÉREZ LÓPEZ
+                    </div>
+                </div>
+                <div class="row m-0">
+                    <div class="col-md-2 col-sm-4 fw-bold" style="text-align: right;">
+                        Matrícula:<br /><span class="fst-italic fw-lighter link-warning">(Sólo si es alumno)</span>
+                    </div>
+                    <div class="col-md-4 col-sm-8">
+                        23564365
+                    </div>
+                    <div class="col-md-2 col-sm-4 fw-bold" style="text-align: right;">
+                        Licenciatura:<br /><span class="fst-italic fw-lighter link-warning">(Sólo si es
+                            alumno)</span>
+                    </div>
+                    <div class="col-md-4 col-sm-8">
+                        LICENCIATURA EN PSICOLOGÍA BIOMÉDICA
+                    </div>
+                </div>
+                <div class="row m-0">
+                    <div class="col-md-2 col-sm-4  fw-bold" style="text-align: right;">
+                        No. económico:<br /><span class="fst-italic fw-lighter link-warning">(Sólo si es
+                            empleado)</span>
+                    </div>
+                    <div class="col-md-4 col-sm-8">
+                        78910
+                    </div>
+                    <div class="col-md-2 col-sm-4 fw-bold" style="text-align: right;">
+                        Área de adscripción:<br /><span class="fst-italic fw-lighter link-warning">(Sólo si es
+                            empleado)</span>
+                    </div>
+                    <div class="col-md-4 col-sm-8">
+                        COORDINACIÓN DE ENLACE ACADÉMICO
+                    </div>
+                </div>
+                <br /><br />
+                <div class="row m-0">
+                    <div class="col-md-12">
+                        <form<form class="row g-3 align-items-start">
+                            <div class="row m-0">
+                                <div class="col-md-4 g-3">
+                                    <div class="fw-bold form-label">
+                                        DATOS DE CONTACTO
+                                    </div>
+    
+                                    <label for="nombre" class="form-label mt-3 fw-bold">Email: <div class="fst-italic fw-lighter">(Capturar
+                                            sólo si desea notificación en un correo distinto al institucional)</div></label>
+                                    <input type="email" class="form-control" id="fulatinoDeTal@gmail.com" placeholder="funanitoDeTal@gmail.com">
+                                    <label for="telefono" class="form-label mt-3 fw-bold">Teléfono: <div class="fst-italic fw-lighter">
+                                            (opcional)</div></label>
+                                    <input type="tel" class="form-control" id="telefono" placeholder="722 345 3462">
+    
+                                </div>
+                                <div class="col-md-4 g-3">
+                                    <div class="fw-bold form-label">
+                                        DATOS DEL REGISTRO
+                                    </div>
+                                    <label for="buzonUAML_insertarMensajeBuzonEmpleado_action_mensajeBuzon_idBuzonServicio" class="form-label mt-3 fw-bold">Servicio<sup style="color: red; font-size: small;">*</sup>:</label>
+                                    <select name="mensajeBuzon.idBuzonServicio" id="buzonUAML_insertarMensajeBuzonEmpleado_action_mensajeBuzon_idBuzonServicio" class="form-select form-control" required>
+                                        <option value="1">ACTIVIDADES CULTURALES</option>
+                                        <option value="2">ACTIVIDADES DEPORTIVAS</option>
+                                        <option value="3">ALIMENTOS</option>
+                                        <option value="4">BECAS, MOVILIDAD, IDIOMAS, SERVICIO SOCIAL</option>
+                                        <option value="5">BIBLIOTECA</option>
+                                        <option value="6">CAMPUS VIRTUAL</option>
+                                        <option value="7">CÓMPUTO</option>
+                                        <option value="8">SERVICIOS ADMINISTRATIVOS / CAJA</option>
+                                        <option value="9">SERVICIOS ESCOLARES</option>
+                                        <option value="10">SERVICIOS MÉDICOS</option>
+                                        <option value="11">TRANSPORTE</option>
+                                        <option value="12">OTROS</option>                                  
+                                    
+                                    </select>
+                                    <label for="buzonUAML_insertarMensajeBuzonEmpleado_action_mensajeBuzon_tipoMensaje" class="form-label mt-3 fw-bold">Tipo<sup style="color: red; font-size: small;">*</sup>:</label>
+                                    <select name="mensajeBuzon.tipoMensaje" id="buzonUAML_insertarMensajeBuzonEmpleado_action_mensajeBuzon_tipoMensaje" class="form-select form-control" required>
+                                        <option value="1">COMENTARIO</option>
+                                        <option value="2">FELICITACION / AGRADECIMIENTO</option>
+                                        <option value="3">SUGERENCIA</option>
+                                        <option value="4">QUEJA</option>
+                                    </select>
+                                   
+                                </div>
+                                <div class="col-md-4 g-3">
+                                    <div class="form-group">
+                                        <label for="mensaje" class="form-label mt-3 fw-bold">Comentario o sugerencia u otro<sup style="color: red; font-size: small;">*</sup>:</label>
+                                        <textarea class="form-control" id="mensaje" rows="6">Testo del comentario de la ayuda psicológica registrada por el usuario......</textarea>
+                                    </div>
+                                </div>
+                                <div class="col-12 text-center my-4">
+                                    <HR>
+                                    <div class="alert alert-warning" role="alert">    
+                                    <h4 class="fst-italic" style="text-align: center;">AVISO DE CONFIDENCIALIDAD</h4>
+                                    <br />
+                                    <p class="fst-italic">
+                                        El contenido de la información proporcionada a través de la aplicación de esta
+                                        plataforma o a través de correo electrónico o de manera personal, incluyendo
+                                        cualquier
+                                        documento adjunto es confidencial y puede contener información privilegiada y
+                                        sensible
+                                        para la Universidad Autónoma Metropolitana por lo que será resguardada y
+                                        protegida, en
+                                        concordancia con el Protocolo para la Prevención, Atención y Erradicación de la
+                                        Violencia de Género de la UAM Lerma, así como el Aviso de Privacidad General de
+                                        la UAM y
+                                        las leyes aplicables al respecto de la protección de datos y contenidos
+                                        sensibles, por
+                                        lo que solamente tendrán acceso a dicha información las autoridades competentes
+                                        de su
+                                        atención y resolución, así como las partes involucradas.</br></br>
+                                    </p>
+									</div>
+                                </div>
+                                <div class="col-12 text-center my-4">
+                                    <button class="btn btn-primary btn-sm" type="button"
+                                        onclick="window.location='mensajeEditarRegistro.html'">
+                                        Continuar
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <div class="container-fluid mt-1 text-center">
+            <div class="row">
+                <hr>
+                <div class="col-sm-6 p-2 ">
+
+                    <h4>Footer</h4>
+                    <p>Coordinación de Campus Virtual.</p>
+                </div>
+                <div class="col-sm-6 p-2 ">
+
+                    <h4>Footer</h4>
+                    <p>Coordinación de Campus Virtual.</p>
+                </div>
+                <div class="col-sm-12 p-2 ">
+
+
+                    <p>Universidad Autonoma Metropolitana Unidad Lerma,
+                        Avenida de las Granjas #123, col. El panteón </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
