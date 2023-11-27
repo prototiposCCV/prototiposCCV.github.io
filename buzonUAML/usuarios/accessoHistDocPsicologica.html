@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Prototipo buzón quejas</title>
+    <title>Prototipo Buzón Quejas</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -30,7 +30,6 @@
                     <div class="container-fluid">
                         <a class="navbar-brand" href="#">
                             <img src="../img/img_avatar1.png" alt="Logo" style="width:40px;" class="rounded-pill">
-
                         </a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapsibleNavbar">
@@ -41,17 +40,22 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="../index.html">Inicio</a>
                                 </li>
-
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link " href="./registroBuzonAyuda.html" role="button">Registro</a>
-
+                                    <a class="nav-link dropdown-toggle" href="#" role="button"
+                                        data-bs-toggle="dropdown">Registro</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="registroBuzonAyuda.html">Comentario o
+                                                sugerencia u otro (Buzón UAM)</a></li>
+                                        <li><a class="dropdown-item" href="registroBuzonAyudaPsicologica.html">Ayuda
+                                                psicológica</a></li>
+                                        <li><a class="dropdown-item" href="registroBuzonQueja.html">Reportes de quejas o
+                                                eventualidades de violencia de género</a></li>
+                                    </ul>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link " href="./seguimientoRegistros.html" role="button">Seguimiento de
-                                        registro</a>
-
+                                    <a class="nav-link " href="./seguimientoRegistros.html"
+                                        role="button">Seguimiento de solicitudes</a>
                                 </li>
-
                             </ul>
                         </div>
                         <a class="navbar-brand" href="../documentos/ficha.docx" target="_blank">
@@ -80,38 +84,29 @@
                     HISTORIAL DE DOCUMENTOS</h4><BR />
                 <div class="row m-0">
                     <div class="col-md-12">
-
                         <div class="row m-0">
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <table class="table">
+                                    <table class="table table-hover">
                                         <tr>
                                             <th>Fecha</th>
                                             <th>Documento</th>
                                             <th>Tipo</th>
                                             <th>Descripción</th>
-                                            <th>Autor</th>
-                                            <th></th>
                                         </tr>
                                         <tr>
                                             <td>01/01/2023</td>
-                                            <td><a href="#">SBA-001-doc1.pdf</td>
+                                            <td><a href="#">SBA-001-doc1.pdf</a></td>
                                             <td>Escrito: Descripción de los hechos</td>
                                             <td>--</td>
-                                            <td>Persona que registró la solicitud</td>
-                                            <td><button type="button" class="btn btn-danger btn-sm">Borrar<sup style="font-size: small;">*</sup></button></td>
+
                                         </tr>
                                         <tr>
                                             <td>01/01/2023</td>
                                             <td><a href="#">SBA-002-doc2.pdf</a></td>
                                             <td>Evidencia</td>
                                             <td>Documento con fotografías de correos electrónicos</td>
-                                            <td>Coord. Bienestar Universitario y Género</td>
-                                            <td><button type="button" class="btn btn-danger btn-sm">Borrar<sup style="font-size: small;">*</sup></button></td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="6"><span class="fst-italic fw-lighter link-warning"><sup style="font-size: small;">*</sup> Se aplicará un borrado "suave" que no eliminará definitivamente los documentos publicados</span></td>
-                                            
+
                                         </tr>
                                     </table>
 
@@ -123,11 +118,12 @@
                 </div>
             </div>
         </section>
+        <hr />
         <section class="big-section bg-white">
             <div class="container p-0" style="align-content: center">
-                <div class="alert alert-warning text-center" role="alert">
+				<div class="alert alert-warning text-center" role="alert">
                 <strong>
-					Cualquier evidencia de tu testimonio, es importante que la compartas. Recuerda que la información es confidencial, sólo el personal que dé seguimiento a tu caso tendrá acceso a ella. 
+					Cualquier evidencia de tu caso, es importante que la compartas. Recuerda que la información es confidencial, sSólo el personal que dé seguimiento a tu caso tendrá acceso a ella. 
 					</strong></div>
                 <br />
                 <br />
@@ -136,45 +132,37 @@
                         <form>
                             <div class="row m-0">
                                 <div class="col-md-4">
-                                    <div class="form-group mt-3">
+                                    <div class="form-group">
                                         <label for="nombre" class="form-label fw-bold">Tipo<sup
                                             style="font-size: small; color:red;">*</sup>:</label>
                                         <select class="form-select form-control" required>
                                             <option>--</option>
-                                            <option>Formato de queja</option>
                                             <option>Solicitud de atención psicológica</option>
-                                            <option>Escrito de testigo</option>
-                                            <option>Pruebas documentales</option>
-                                            <option>Pruebas digitales</option>
                                             <option>Otro</option>
                                         </select>
                                     </div>
 
-                                    <div class="form-group mt-3">
-                                        <label for="telefono" class="form-label fw-bold">Documento<sup
+                                    <div class="form-group">
+                                        <label for="telefono" class="form-label fw-bold mt-3">Documento<sup
                                             style="font-size: small; color:red;">*</sup>:</label>
                                         <input type="file" class="form-control" id="telefono"
-                                            placeholder="Selecciona documento en pdf">                                        
+                                            placeholder="Selecciona documento en pdf">
                                     </div>
 
                                 </div>
                                 <div class="col-md-4">
-                                    <div class="form-group mt-3">
-                                        <label for="mensaje" class="form-label fw-bold">Describir brevemente el
-                                            contenido del documento:</label>
-                                        <textarea class="form-control" id="mensaje" rows="4"></textarea>
+                                    <div class="form-group">
+                                        <label for="mensaje">Si publicaste un documento, describe brevemente su
+                                            contenido:</label>
+                                        <textarea class="form-control" id="mensaje" rows="6"></textarea>
                                     </div>
-                                </div>
 
+                                </div>
                                 <div class="col-md-4 ">
-                                    <div class="form-group mb-3">
-                                        <label for="mensaje" class="form-label mt-3 fw-bold">Emails adicionales para notificaciones:<div class="fst-italic fw-lighter">(Llenar sólo si se desea notificar a personas adicionales a la persona que está dando seguimiento o a la persona en situación de víctima)</div></label>
-                                        <textarea class="form-control" id="mensaje" rows="2">abc@correo.ler.uam.mx, cde@correo.ler.uam.mx,
-efg@correo.ler.uam.mx
-                                        </textarea>
-                                    </div>
+
                                     <div class="form-group"><br />
-                                        <button class="btn btn-primary btn-sm" type="button">
+                                        <button class="btn btn-primary btn-sm" type="button"
+                                            onclick="window.location='accessoHistDocPsicologica.html'">
                                             Publicar documento
                                         </button>
                                     </div>
@@ -189,7 +177,7 @@ efg@correo.ler.uam.mx
             <div class="row">
                 <div class="col-sm-12 p-3 ">
                     <div class="container mt-3 table-responsive">
-                        <div class="text-center fst-italic">
+                        <div class="text-center fst-italic">                            
                             <button class="btn btn-primary btn-sm" type="button"
                                 onclick="window.location='seguimientoRegistros.html'">
                                 Regresar
@@ -197,7 +185,7 @@ efg@correo.ler.uam.mx
                         </div>
                     </div>
                 </div>
-            </div>
+
         </section>
 
         <div class="container-fluid mt-1 text-center">
@@ -218,7 +206,8 @@ efg@correo.ler.uam.mx
 
                     <p>Universidad Autonoma Metropolitana Unidad Lerma,
                         Avenida de las Granjas #123, col. El panteón </p>
-                </div>                
+                </div>
+                
             </div>
         </div>
     </div>

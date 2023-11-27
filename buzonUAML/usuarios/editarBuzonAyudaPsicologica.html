@@ -48,7 +48,7 @@
                                         data-bs-toggle="dropdown">Registro</a>
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="registroBuzonAyuda.html">Comentario o
-                                                sugerencia u otro (Buzón UAM)</a></li>
+                                                sugerencia u otro</a></li>
                                         <li><a class="dropdown-item" href="registroBuzonAyudaPsicologica.html">Ayuda
                                                 psicológica</a></li>
                                         <li><a class="dropdown-item" href="registroBuzonQueja.html">Reportes de quejas o
@@ -58,7 +58,6 @@
                                 <li class="nav-item dropdown">
                                     <a class="nav-link " href="./seguimientoRegistros.html" role="button">Seguimiento de
                                         registro</a>
-
                                 </li>
 
                             </ul>
@@ -73,8 +72,7 @@
                                 Formato de queja
                             </button>
                         </a>
-                        <a class="navbar-brand" href="http://www.ler.uam.mx/es/Micrositios_UAML/BienestarUAML"
-                            target="_blank">
+                        <a class="navbar-brand" href="http://www.ler.uam.mx/es/Micrositios_UAML/BienestarUAML" target="_blank">
                             <button class="btn btn-primary" type="button">
                                 Más información
                             </button>
@@ -82,7 +80,6 @@
                     </div>
                 </nav>
             </div>
-
         </div>
 
         <section class="big-section bg-white">
@@ -135,104 +132,90 @@
                 </div>
             </div>
             <br /><br />
+            <div class="row m-0">
+                <div class="col-md-12">
+                    <form class="row g-3 align-items-start">
+                        <div class="row m-0">
+                            <div class="col-md-4 g-3">
+                                <div class="fw-bold form-label">
+                                    DATOS DE CONTACTO
+                                </div>
 
-            <form class="row g-3 align-items-start">
+                                <label for="nombre" class="form-label mt-3 fw-bold">Email: <div class="fst-italic fw-lighter">(Capturar
+                                        sólo si desea notificación en un correo distinto al institucional)</div></label>
+                                <input type="email" class="form-control" id="email" placeholder="fulatinoDeTal@gmail.com">
+                                <label for="telefono" class="form-label mt-3 fw-bold">Teléfono: <div class="fst-italic fw-lighter">
+                                        (opcional)</div></label>
+                                <input type="tel" class="form-control" id="telefono" placeholder="722 345 2324">
 
-                <div class="col-md-4 g-3 mb-5">
-                    <strong class="form-label">DATOS DE CONTACTO DE LA PERSONA QUE REALIZA EL REGISTRO</strong><br />
+                            </div>
+                            <div class="col-md-4 g-3">
+                                <div class="fw-bold form-label">
+                                    FECHA DE LA SESIÓN
+                                    <div class="fst-italic fw-lighter">
+                                        Por favor indique 3 posibles días y horas en que pueda asistir a sesión (El
+                                        horario
+                                        de atención de la <span style="color:#AD25A8;">Oficina de Proyectos Integrales
+                                            para el Bienestar Universitario</span> es de 10:00 a 14:00 hrs. y de 15:00 a
+                                        18:00 hrs.)
+                                    </div>
+                                </div>
+                                <label for="opt1" class="form-label mt-3 fw-bold">Sesión 1: Día y hora propuesta<sup style="color: red; font-size: small;">*</sup></label> <br/>2023-10-24, 10:30
+                                <input type="datetime-local" class="form-control" id="opt1" placeholder="Opción 1" value="2023-10-24, 11:00">
 
-                    <label for="nombre" class="form-label mt-3 fw-bold">Email: <div class="fst-italic fw-lighter">
-                            (Capturar sólo si desea
-                            notificación en
-                            un correo distinto al institucional)</div></label>
-                    <input type="tel" class="form-control" id="email" placeholder="Email">
+                                <label for="opt2" class="form-label mt-3 fw-bold">Sesión 2: Día y hora propuesta<sup style="color: red; font-size: small;">*</sup></label><br/>2023-10-24, 11:30
+                                <input type="datetime-local" class="form-control" id="opt2" placeholder="Opción 2" value="2023-10-24, 11:30">
 
-                    <label for="telefono" class="form-label mt-3 fw-bold">Teléfono: <div class="fst-italic fw-lighter">
-                            (opcional)</div>
-                    </label>
-                    <input type="tel" class="form-control" id="telefono" placeholder="Tel&eacute;fono">
+                                <label for="opt3" class="form-label mt-3 fw-bold">Sesión 3: Día y hora propuesta<sup style="color: red; font-size: small;">*</sup></label><br/>2023-10-26, 10:30
+                                <input type="datetime-local" class="form-control mb-5" id="opt3" placeholder="Opción 3" valor="2023-10-26,  11:30">
+                            </div>
+                            <div class="col-md-4 g-3 mb-5">
+                                <div class="fw-bold form-label">
+                                    MOTIVO DE LA CONSULTA<br />
+                                    <div class="fst-italic fw-lighter">
+                                        Breve descripción (opcional):
+                                    </div>
+                                </div>
+                                <textarea class="form-control" id="mensaje" rows="6">Motivo de la consulta psicológica descrita por el usuario...</textarea>
+                                <span class="fst-italic fw-lighter link-warning">En la aplicación definitiva este campo se expandirá verticalmente conforme el usuario vaya capturando texto</span>
+                                <div class="form-group">
+                                    <label for="mensaje" class="form-label mt-3 fw-bold">Emails adicionales para notificaciones:<div class="fst-italic fw-lighter">(Llenar sólo si se desea notificar a personas adicionales a la persona titular de la <span class="link-primary">Oficina de Proyectos Integrales para el Bienestar Universitario</span> y la <span class="link-primary">persona que registra</span>)</div></label>
+                                    <textarea class="form-control" id="mensaje" rows="2">abc@correo.ler.uam.mx, cde@correo.ler.uam.mx,
+efg@correo.ler.uam.mx
+                                    </textarea>
+                                </div>
+                            </div>
 
+                            <HR>
+                            <div class="alert alert-warning" role="alert">
+                            <h4 class="fst-italic" style="text-align: center;">AVISO DE CONFIDENCIALIDAD</h4>
+                            <br />
+                            <p class="fst-italic">
+                                El contenido de la información proporcionada a través de la aplicación de esta
+                                plataforma o a través de correo electrónico o de manera personal, incluyendo cualquier
+                                documento adjunto es confidencial y puede contener información privilegiada y sensible
+                                para la Universidad Autónoma Metropolitana por lo que será resguardada y protegida, en
+                                concordancia con el Protocolo para la Prevención, Atención y Erradicación de la
+                                Violencia de Género de la UAM Lerma, así como el Aviso de Privacidad General de la UAM y
+                                las leyes aplicables al respecto de la protección de datos y contenidos sensibles, por
+                                lo que solamente tendrán acceso a dicha información las autoridades competentes de su
+                                atención y resolución, así como las partes involucradas.</br></br>
+                            </p>
+						    </div>
+                        </div>
+
+                        <div class="row m-0">
+                            <div class="col-12 text-center my-4">
+                                <button class="btn btn-primary btn-sm" type="button"
+                                    onclick="window.location='mensajeEditarRegistro.html'">
+                                    Continuar
+                                </button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
-                <div class="col-md-4 g-3">
-                    <strong class="form-label">PERSONA A LA QUE SEÑALA COMO RESPONSABLE</strong><br />
 
-                    <label for="nombre" class="form-label mt-3 fw-bold">Nombre:</label>
-                    <input type="text" class="form-control" id="nombre" placeholder="Nombre">
-
-                    <label for="cargo" class="form-label mt-3 fw-bold">Cargo:</label>
-                    <input type="text" class="form-control" id="cargo" placeholder="Cargo">
-
-                    <label for="dependencia" class="form-label mt-3 fw-bold">Dependencia:</label>
-                    <input type="text" class="form-control" id="dependencia" placeholder="Dependencia">
-
-                </div>
-                <div class="col-md-4 g-3">
-                    <br/><input type="checkbox" id="proteccion" /> <label for="proteccion"
-                        class="form-label mt-3 fw-bold">¿Necesitas ayuda?</label>
-					<div class="form-check">
-                    	<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-                    	<label class="form-check-label" for="exampleRadios1"> SI </label>
-                	</div>
-                    <div class="form-check">
-                	    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" checked>
-                    	<label class="form-check-label" for="exampleRadios2"> NO</label>
-                	</div>
-					<div class="form-check">
-                    	<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                    	<label class="form-check-label" for="exampleRadios2"> NO SÉ</label>
-                   </div>
-                    <div class="form-group">
-                        <label for="mensaje" class="form-label mt-3 fw-bold">Emails adicionales para notificaciones:<div
-                                class="fst-italic fw-lighter">(Llenar sólo si se desea notificar a personas adicionales
-                                a la persona titular de la <span class="link-primary">Coordinación de Bienestar Universitario y Género</span> y la <span class="link-primary">persona que registra</span>)</div></label>
-                        <textarea class="form-control" id="mensaje" rows="2">abc@correo.ler.uam.mx, cde@correo.ler.uam.mx, efg@correo.ler.uam.mx
-                        </textarea>
-                    </div>
-                </div>
-				<div class="col-md-11 g-3">
-					<div class="alert alert-warning" role="alert">
-                    <label for="mensaje" class="form-label mt-3 fw-bold text-center"><span class="fst-italic fw-lighter">
-						    <strong class="form-label">IMPORTANTE</strong><br/>
-						    Si así lo deseas, describe el problema, circunstancias y datos pertinentes de modo, tiempo y lugar, en orden cronológico y de manera concisa.<br/> O bien, puedes tratarlo personalmente con la persona que te brindará la ayuda y asesoría que necesites.</span>
-                       
-                    </label>
-					</div>
-					<strong class="form-label">MOTIVO DE LA QUEJA</strong><br/>
-					 Me permito someter a su consideración los siguientes hechos:
-                    <textarea class="form-control" id="mensaje" rows="3"></textarea>
-                    <span class="fst-italic fw-lighter link-warning">En la aplicación definitiva este campo se expandirá
-                        verticalmente conforme el usuario vaya capturando texto</span>                                            
-                </div>
-                <div class="row mt-5">
-                    <HR>
-                    <div class="alert alert-warning" role="alert">
-                    <h4 class="fst-italic" style="text-align: center;">AVISO DE CONFIDENCIALIDAD</h4>
-                    <br />
-                    <p class="fst-italic">
-                        El contenido de la información proporcionada a través de la aplicación de esta
-                        plataforma o a través de correo electrónico o de manera personal, incluyendo cualquier
-                        documento adjunto es confidencial y puede contener información privilegiada y sensible
-                        para la Universidad Autónoma Metropolitana por lo que será resguardada y protegida, en
-                        concordancia con el Protocolo para la Prevención, Atención y Erradicación de la
-                        Violencia de Género de la UAM Lerma, así como el Aviso de Privacidad General de la UAM y
-                        las leyes aplicables al respecto de la protección de datos y contenidos sensibles, por
-                        lo que solamente tendrán acceso a dicha información las autoridades competentes de su
-                        atención y resolución, así como las partes involucradas.</br></br>
-                    </p>
-				    </div>
-                </div>
-                <div class="row m-0">
-
-                    <div class="col-12 text-center my-4">
-                        <button class="btn btn-primary btn-sm" type="button"
-                            onclick="window.location='registroBuzonAyudaPubDoc.html'">
-                            Continuar
-                        </button>
-                    </div>
-
-                </div>
-            </form>
-
+            </div>
     </div>
     </section>
 
@@ -255,7 +238,7 @@
                 <p>Universidad Autonoma Metropolitana Unidad Lerma,
                     Avenida de las Granjas #123, col. El panteón </p>
             </div>
-
+            
         </div>
     </div>
     </div>

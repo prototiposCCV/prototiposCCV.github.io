@@ -61,10 +61,19 @@
 
                             </ul>
                         </div>
-                        <a class="navbar-brand" href="#">
-                            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
-                                data-bs-target="#demo">
-                                Ayuda
+                        <a class="navbar-brand" href="../documentos/ficha.docx" target="_blank">
+                            <button class="btn btn-primary" type="button">
+                                Ficha primera cita
+                            </button>
+                        </a>
+                        <a class="navbar-brand" href="../documentos/formatoQueja.docx" target="_blank">
+                            <button class="btn btn-primary" type="button">
+                                Formato de queja
+                            </button>
+                        </a>
+                        <a class="navbar-brand" href="http://www.ler.uam.mx/es/Micrositios_UAML/BienestarUAML" target="_blank">
+                            <button class="btn btn-primary" type="button">
+                                Más información
                             </button>
                         </a>
                     </div>
@@ -90,21 +99,6 @@
                                             <th>Descripción</th>
                                             <th></th>
                                         </tr>
-                                        <tr>
-                                            <td>01/01/2023</td>
-                                            <td><a href='#'>SBA-001-doc1.pdf</a></td>
-                                            <td>Solicitud de atención psicológica</td>
-                                            <td>--</td>
-                                            <td><button type="button" class="btn btn-danger btn-sm">Borrar</button></td>
-
-                                        </tr>
-                                        <tr>
-                                            <td>01/01/2023</td>
-                                            <td><a href='#'>SBA-002-doc2.pdf</a></td>
-                                            <td>Otro</td>
-                                            <td>Evidencia:Documento con fotografías de correos electrónicos</td>
-                                            <td><button type="button" class="btn btn-danger btn-sm">Borrar</button></td>
-                                        </tr>
                                     </table>
                                 </div>
                             </div>
@@ -116,10 +110,10 @@
         <hr />
         <section class="big-section bg-white">
             <div class="container p-0" style="align-content: center">
-                <h4 class="alt-font text-black text-center  letter-spacing-minus-1px margin-50px-bottom">
-                    Publicación de documentos</h4><br />
-                <center><strong>(Si cuenta con documentos o archivos que apoyen los hechos que narra, favor de
-                        anexarlos)</strong></center>
+                <div class="alert alert-warning" role="alert">
+                <center><strong>
+					Si deseas compartir algún documento que sea importante conocer para poder brindarte la ayuda psicológica que necesitas, puedes hacerlo, la información siempre será tratada de forma confidencial. O bien, puedes tratarlo personalmente en la primer cita que se programe para proporcionarte la ayuda que necesites</strong></center>
+				</div>
                 <br />
                 <div class="row m-0">
                     <div class="col-md-12">
@@ -127,7 +121,8 @@
                             <div class="row m-0">
                                 <div class="col-md-4">
                                     <div class="form-group mt-3">
-                                        <label for="nombre">Tipo</label>
+                                        <label for="nombre" class="form-label fw-bold">Tipo<sup
+                                            style="font-size: small; color:red;">*</sup>:</label>
                                         <select class="form-select form-control" required>
                                             <option>--</option>
                                             <option>Solicitud de atención psicológica</option>
@@ -136,7 +131,8 @@
                                     </div>
 
                                     <div class="form-group mt-3">
-                                        <label for="telefono">Documento</label>
+                                        <label for="telefono" class="form-label fw-bold">Documento<sup
+                                            style="font-size: small; color:red;">*</sup>:</label>
                                         <input type="file" class="form-control" id="telefono"
                                             placeholder="Selecciona documento en pdf">                                        
                                     </div>
@@ -144,7 +140,7 @@
                                 </div>
                                 <div class="col-md-4">
                                     <div class="form-group mt-3">
-                                        <label for="mensaje">Describir brevemente el
+                                        <label for="mensaje" class="form-label fw-bold">Describir brevemente el
                                             contenido del documento:</label>
                                         <textarea class="form-control" id="mensaje" rows="4"></textarea>
                                     </div>
@@ -153,7 +149,7 @@
                                 <div class="col-md-4 ">
 
                                     <div class="form-group"><br />
-                                        <button class="btn btn-primary btn-sm" type="button">
+                                        <button class="btn btn-primary btn-sm" type="button" onclick="window.location='registroBuzonAyudaPubDocPsico2.html'">
                                             Publicar documento
                                         </button>
                                     </div>
@@ -168,11 +164,9 @@
             <div class="row">
                 <div class="col-sm-12 p-3 ">
                     <div class="container mt-3 table-responsive">
-                        <div class="text-center fst-italic">La información es confidencial. Sólo el personal que dé seguimiento a
-                            tu registro tendrá acceso a ella. <br />
-                            </br>
+                        <div class="text-center fst-italic">
                             <button class="btn btn-primary btn-sm" type="button"
-                                onclick="window.location='mensajeRegistro.html'">
+                                onclick="window.location='registroBuzonAyudaPubDocPsico2.html'">
                                 Continuar
                             </button>
                         </div>
@@ -200,53 +194,7 @@
                     <p>Universidad Autonoma Metropolitana Unidad Lerma,
                         Avenida de las Granjas #123, col. El panteón </p>
                 </div>
-                <div class="offcanvas offcanvas-end" id="demo">
-                    <div class="offcanvas-header">
-                        <h1 class="offcanvas-title">Heading</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <p>Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.
-                            Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some
-                            text lorem ipsum.
-                            Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some
-                            text lorem ipsum.
-                            Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some
-                            text lorem ipsum.
-                            Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.
-
-                            Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.
-                            Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some
-                            text lorem ipsum.
-                            Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some
-                            text lorem ipsum.
-                            Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some
-                            text lorem ipsum.
-                            Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.
-                            Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.
-                            Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some
-                            text lorem ipsum.
-                            Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some
-                            text lorem ipsum.
-                            Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some
-                            text lorem ipsum.
-                            Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.
-                            Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.
-                            Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some
-                            text lorem ipsum.
-                            Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some
-                            text lorem ipsum.
-                            Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.Some
-                            text lorem ipsum.
-                            Some text lorem ipsum.Some text lorem ipsum.Some text lorem ipsum.
-
-                            <img src="img/img_avatar1.png" alt="Logo" style="width:40px;" class="rounded-pill">
-                        </p>
-                        <p>Some text lorem ipsum.</p>
-                        <p>Some text lorem ipsum.</p>
-                        <button class="btn btn-secondary" type="button">A Button</button>
-                    </div>
-                </div>
+                
             </div>
         </div>
     </div>
