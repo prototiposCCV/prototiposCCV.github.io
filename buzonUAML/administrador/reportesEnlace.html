@@ -39,23 +39,22 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="../index.html">Inicio</a>
                                 </li>
-                                
+
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Registro</a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="../usuarios/registroBuzonAyuda.html">Comentario o sugerencia u otro</a></li>
-                                        <li><a class="dropdown-item" href="../usuarios/registroBuzonAyudaPsicologica.html">Ayuda psicológica</a></li>
-										<li><a class="dropdown-item" href="../usuarios/registroBuzonQueja.html">Reportes de quejas o eventualidades de violencia de género</a></li>
+                                        <li><a class="dropdown-item" href="../administrador/registroBuzonAyuda.html">Comentario de servicio</a></li>
+                                        <li><a class="dropdown-item" href="../administrador/registroBuzonAyudaPsicologica.html">Ayuda psicológica</a></li>
+										<li><a class="dropdown-item" href="../administrador/registroBuzonQueja.html">Quejas o eventualidades de violencia de género</a></li>
                                     </ul>
-                                </li>
+                                </li>								 
 								 <li class="nav-item dropdown">
-                                     <a class="nav-link " href="./seguimientoRegistrosAdmon.html" role="button" >Seguimiento de registro (Admón)</a>                                   
+                                     <a class="nav-link " href="./seguimientoRegistrosAdmon.html" role="button" >Seguimiento de registro</a>                                   
                                 </li>
-								<li class="nav-item dropdown">
-                                     <a class="nav-link " href="./reportesEnlace.html" role="button" >Reportes</a>
-                                   
-                                </li>
-								
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link " href="./reportesEnlace.html" role="button">Reportes</a>
+
+                                </li>                               
                             </ul>
                         </div>  
                         <a class="navbar-brand" href="../documentos/ficha.docx" target="_blank">
@@ -87,7 +86,7 @@
                     <div class="col-md-12">
                         <form>
                             <div class="row m-0">
-								<div class="col-md-3">
+								<div class="col-md-2">
                                     <div class="form-group">
                                        
                                     </div>
@@ -105,14 +104,42 @@
                                     <div class="form-group">
                                        
                                         <select class="form-select form-control" required>
-                        <option>23-*</option>
-                        <option>23-I</option>
-                        <option>23-O</option>
+                        <option>23</option>
+                        <option>24</option>
+                      </select> 
+										<select class="form-select form-control" required>
+                        <option>*</option>
+                        <option>I</option>
+                        <option>O</option>
+											<option>P</option>
                       </select> 
                                     </div>
                                    
                                   
                                 </div>
+								<div class="col-md-1">
+                                    <div class="form-group">
+                                        <label for="nombre" >Tipo de Registro</label>
+                                    </div>
+                                   
+                                  
+                                </div>
+								
+								<div class="col-md-2">
+                                    <div class="form-group">
+                                       
+                                        <select class="form-select form-control" required>
+                        <option>--</option>
+											<option>Comentarios de servicios</option>
+                        <option>Ayuda psicológica</option>
+                        <option>Queja o eventualidad de violencia de género</option>
+						<option>Personales</option>
+                      </select> 
+                                    </div>
+                                   
+                                  
+                                </div>
+								
                                 <div class="col-md-3">
                                    <div class="form-group">
 										<button class="btn btn-primary btn-sm" type="button" onclick="window.location='reportesEnlace.html'">

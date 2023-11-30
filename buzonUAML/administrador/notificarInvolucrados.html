@@ -45,17 +45,14 @@
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Registro</a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="../usuarios/registroBuzonAyuda.html">Comentario o sugerencia u otro</a></li>
-                                        <li><a class="dropdown-item" href="../usuarios/registroBuzonAyudaPsicologica.html">Ayuda psicológica</a></li>
-										<li><a class="dropdown-item" href="../usuarios/registroBuzonQueja.html">Reportes de quejas o eventualidades de violencia de género</a></li>
+                                        <li><a class="dropdown-item" href="../administrador/registroBuzonAyuda.html">Comentario de servicio</a></li>
+                                        <li><a class="dropdown-item" href="../administrador/registroBuzonAyudaPsicologica.html">Ayuda psicológica</a></li>
+										<li><a class="dropdown-item" href="../administrador/registroBuzonQueja.html">Quejas o eventualidades de violencia de género</a></li>
                                     </ul>
-                                </li>
+                                </li>								 
 								 <li class="nav-item dropdown">
-                                     <a class="nav-link " href="../usuarios/seguimientoRegistros.html" role="button" >Seguimiento de registro</a>                                   
+                                     <a class="nav-link " href="./seguimientoRegistrosAdmon.html" role="button" >Seguimiento de registro</a>                                   
                                 </li>
-								 <li class="nav-item dropdown">
-                                     <a class="nav-link " href="./seguimientoRegistrosAdmon.html" role="button" >Seguimiento de registro (Admón)</a>                                   
-                                </li>                                
                                 <li class="nav-item dropdown">
                                     <a class="nav-link " href="./reportesEnlace.html" role="button">Reportes</a>
 
@@ -102,17 +99,18 @@
     </div>
     </div>
     </section>
+	
     <section class="big-section bg-white">
         <div class="container p-0">
             <h4 class="alt-font text-black text-center  letter-spacing-minus-1px margin-50px-bottom">
-                Registro de nuevos involucrados</h4><br /><br />
+                Registro de nuevos involucrados</h4><br />
             <div class="row m-0">
                 <div class="col-md-12">
                     <form>
                         <div class="row m-0">
-                            <div class="col-md-6">
+                            <div class="col-md-4">
                                 <div class="form-group">
-                                    <label for="nombre">Tipo</label>
+                                    <label for="nombre">Área</label>
                                     <select class="form-select form-control" required>
                                         <option>--</option>
                                         <option>Persona en situación de Víctima</option>
@@ -132,13 +130,16 @@
                                     <label for="telefono">Email</label>
                                     <input type="tel" class="form-control" id="telefono"
                                         placeholder="Obligatorio para 'OTRO'">
-
                                 </div>
-
+                            </div>
+							<div class="col-md-4">
+                                <div class="form-group">
+                                    <button class="btn btn-primary btn-sm" type="button"                             onclick="window.location='#'">Asignar a la lista de notificaciones </button>
+                                </div>
                             </div>
 							<div class="col-md-5">
                                 <div class="form-group">	
-									<br/><br/>
+									<br/><br/><hr>
 									<strong class="form-label">MENSAJE</strong><br/>
 									<textarea class="form-control" id="mensaje" rows="3"></textarea>
 									<span class="fst-italic fw-lighter link-warning">En la aplicación definitiva este campo se expandirá
@@ -147,7 +148,7 @@
 							</div>
 							<div class="col-md-5">
                                 <div class="form-group">
-									<br/><br/>
+									<br/><br/><hr>
 									<strong class="form-label">DOCUMENTOS ADJUNTOS</strong><br/>
 									 Selecciona los documentos que deseas anexar al correo:
 									<div class="row">
