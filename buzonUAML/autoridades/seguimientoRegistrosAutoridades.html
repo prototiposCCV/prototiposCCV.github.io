@@ -67,9 +67,9 @@
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Registro</a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="registroBuzonAyuda.html">Comentario o sugerencia u otro</a></li>
+                                        <li><a class="dropdown-item" href="registroBuzonAyuda.html">Comentario de servicio</a></li>
                                         <li><a class="dropdown-item" href="registroBuzonAyudaPsicologica.html">Ayuda psicológica</a></li>
-										<li><a class="dropdown-item" href="registroBuzonQueja.html">Reportes de quejas o eventualidades de violencia de género</a></li>
+										<li><a class="dropdown-item" href="registroBuzonQueja.html">Quejas o eventualidades de violencia de género</a></li>
                                     </ul>
                                 </li>								 
 								 <li class="nav-item dropdown">
@@ -116,7 +116,7 @@
                             <div class="col-md-6">
                                 <label for="tipo" class="form-label fw-bold">Tipo:</label>
                                 <select class="form-select form-control" required id="tipo">
-                                    <option>--</option>
+                                    <option>*</option>
                                     <option>Comentario, sugerencia u otro</option>
                                     <option>Ayuda psicológica</option>
                                     <option>Reportes de quejas o eventualidades de violencia de género</option>                                   
@@ -125,7 +125,7 @@
                             <div class="col-md-6">
                                 <label for="denunciada" class="form-label fw-bold">Coordinación:</label>
                                 <select class="form-select form-control" required id="tipo">
-                                    <option>--</option>
+                                    <option>*</option>
                                     <option>Coord. de Campus Virtual (CCV)</option>
                                     <option>Coord. de Planeación y e Información Institucional</option>
                                     <option>Coord. de Recursos Materiales</option> 
@@ -134,7 +134,7 @@
 							<div class="col-md-6">
                                 <label for="denunciada" class="form-label fw-bold">Tipo de Servicio:</label>
                                 <select class="form-select form-control" required id="tipo">
-                                    <option>--</option>
+                                    <option>*</option>
                                     <option>Desarrollo de sistemas</option>
                                     <option>Plataformas para aulas virtuales XAHNI y PADI</option>
 									<option>Aplicativo NADU 1,0</option>
@@ -151,20 +151,13 @@
                                     <option>24</option>
                                 </select>
 								<select class="form-select form-control" required id="trimestre">
-                                    <option>--</option>
+                                    <option>*</option>
                                     <option>I</option>
                                     <option>O</option>
 									<option>P</option>
                                 </select>
                             </div>
-							<div class="col-md-6">
-                                <label for="trimestre" class="form-label fw-bold">Año:</label>
-                                <select class="form-select form-control" required id="trimestre">
-                                    <option>--</option>
-                                    <option>23-I</option>
-                                    <option>23-O</option>
-                                </select>
-                            </div>
+							
 
                             <div class="col-md-6">
                                 <label for="solicitante" class="form-label fw-bold">Persona solicitante:</label>
@@ -210,73 +203,29 @@
                                         <th>Historial de seguimiento</th>
                                         <th>Historial de documentos</th>  
 										<th>Notificación a involucrados</th> 
-										<th>Delegar solicitud</th> 
                                         <th>Estado</th>
                                     </tr>
                                 </thead>
-                                <tr>
-									<td><a href="#"><i class="bi bi-file-earmark-pdf"></i>RBA-01</a><br/><button class="btn btn-primary btn-sm" type="button"  onclick="window.location='editarBuzonQueja.html'">
-                                                Editar registro
-                                            </button>
-									</td>
-									<td>
-                                            01/01/2023<br/>
-											Trimestre: 23-I
-                                    </td>                                    
-                                    <td><strong>JUAN ALVAREZ ROBLES</strong>
-                                        <hr />
-                                        LIC. EN PSICOLOGÍA BIOMÉDICA<br />
-                                        1293847@correo.ler.uam.mx
-                                    </td>
-                                    <td><strong>FALTA/EVENTUALIDAD EMPLEADOS</strong>
-                                        </button>
-                                    </td>
-                                    <td class="text-center"><button class="btn btn-primary btn-sm" type="button"
-                                            onclick="window.location='registrarComentarioAdmon.html'">
-                                            Registrar comentario
-                                        </button></td>
-                                    <td class="text-center"><button class="btn btn-primary btn-sm" type="button"
-                                            onclick="window.location='accesoHistDoc.html'">
-                                            Acceso
-                                        </button></td>                                    
-                                    <td class="text-center"><button class="btn btn-primary btn-sm" type="button"
-                                            onclick="window.location='notificarInvolucrados.html'">
-                                            Notificar
-                                        </button></td>
-							        <td class="text-center"><button class="btn btn-primary btn-sm" type="button"
-                                            onclick="window.location='delegarSolicitud.html'">
-                                            Delegar
-                                        </button></td>
-                                    <td class="text-center">
-                                        <strong>EN PROCESO</strong>
-                                        <button class="btn btn-primary btn-sm" type="button"
-                                            onclick="window.location='cambiarEstado.html'">
-                                            Cambiar estado
-                                        </button>
-                                    </td>
-                                </tr>
 						        <tr>
-									<td><a href="#"><i class="bi bi-file-earmark-pdf"></i>RBA-01</a><br/><button class="btn btn-primary btn-sm" type="button"  onclick="window.location='editarBuzonAyudaPsicologica.html'">
-                                                Editar registro
-                                            </button>
+									<td><a href="#"><i class="bi bi-file-earmark-pdf"></i>RBA-01</a><br/><button class="btn btn-primary btn-sm" type="button"  onclick="window.location='editarBuzonQueja.html'">Editar registro</button>
 									</td>
 									<td>
-                                            01/01/2023<br/>
-											Trimestre: 23-I
+                                        01/01/2023<br/>
+										Trimestre: 23-I
                                     </td>                                    
                                     <td><strong>GABRIEL SOTO CORTÉS</strong>
                                         <hr />
                                         RECTOR DE UNIDAD<br />
-                                        1293847@correo.ler.uam.mx
+                                        rectoria@correo.ler.uam.mx
                                     </td>
-                                    <td><strong>AYUDA PSICOLÓGICA</strong>
-                                        </button>
+                                    <td><strong>QUEJA O EVENTUALIDAD DE VIOLENCIA DE GÉNERO</strong>
                                     </td>
-                                    <td class="text-center"><button class="btn btn-primary btn-sm" type="button"
-                                            onclick="window.location='registrarComentarioAdmon.html'">
+                                    <td class="text-center"><button class="btn btn-primary btn-sm" type="button" onclick="window.location='registrarComentarioAdmon.html'">
                                             Registrar comentario
-                                        </button></td>
-                                    <td class="text-center"><button class="btn btn-primary btn-sm" type="button"
+                                        </button>
+									</td>
+                                    <td class="text-center">
+										<button class="btn btn-primary btn-sm" type="button"
                                             onclick="window.location='accesoHistDoc.html'">
                                             Acceso
                                         </button></td>                                    
@@ -284,8 +233,7 @@
                                             onclick="window.location='notificarInvolucrados.html'">
                                             Notificar
                                         </button></td>
-							        <td class="text-center"></td>
-                                    <td class="text-center">
+							        <td class="text-center">
                                         <strong>EN PROCESO</strong>
                                        
                                     </td>
@@ -297,12 +245,89 @@
                                             01/01/2023<br/>
 											Trimestre: 23-I
                                     </td>                                    
+                                    <td><strong>GABRIEL SOTO CORTÉS</strong>
+                                        <hr />
+                                        RECTOR DE UNIDAD<br />
+                                        rectoria@correo.ler.uam.mx
+                                    </td>
+                                    <td><strong>COMENTARIO DE SERVICIO</strong><br/><br/>SUGERENCIA<br/>CCV <br/> Portal Web 
+                                        </button>
+                                    </td>
+                                    <td class="text-center">
+										<button class="btn btn-primary btn-sm" type="button" onclick="window.location='registrarComentarioAdmon.html'">Registrar comentario</button>
+									</td>
+                                    <td class="text-center">
+										<button class="btn btn-primary btn-sm" type="button" onclick="window.location='accesoHistDoc.html'">
+                                            Acceso
+                                        </button>
+									</td>                                    
+                                    <td class="text-center"><button class="btn btn-primary btn-sm" type="button"
+                                            onclick="window.location='notificarInvolucrados.html'">
+                                            Notificar
+                                        </button></td>
+                                    <td class="text-center">
+                                        <strong>ATENDIDA</strong>
+                                    </td>
+                                </tr>
+				 				<tr>
+									<td><a href="#"><i class="bi bi-file-earmark-pdf"></i>RBA-01</a><br /><br/>
+										<button class="btn btn-primary btn-sm" type="button"  onclick="window.location='editarBuzonAyudaPsicologica.html'">Editar registro</button>
+									</td>
+									<td>
+                                        01/01/2023<br/>
+										Trimestre: 23-I
+                                    </td>                                    
+                                    <td><strong>GABRIEL SOTO CORTÉS</strong>
+                                        <hr />
+                                        RECTOR DE UNIDAD<br />
+                                        rectoria@correo.ler.uam.mx
+                                    </td>
+                                    <td><strong>AYUDA PSICOLÓGICA</strong>
+                                    </td>
+                                    <td class="text-center"><button class="btn btn-primary btn-sm" type="button"
+                                            onclick="window.location='registrarComentarioAdmon.html'">
+                                            Registrar comentario
+                                        </button></td>
+                                    <td class="text-center"><button class="btn btn-primary btn-sm" type="button"
+                                            onclick="window.location='accesoHistDoc.html'">
+                                            Acceso
+                                        </button></td>                                    
+                                    <td class="text-center"><button class="btn btn-primary btn-sm" type="button"
+                                            onclick="window.location='notificarInvolucrados.html'">
+                                            Notificar
+                                        </button></td>
+                                    <td class="text-center">
+                                        <strong>EN PROCESO</strong>
+                                       
+                                    </td>
+                                </tr>
+		</table>
+	<table class="table table-striped">
+                                <thead>
+                                    <tr align="center">
+                                        <th>Folio</th>
+										<th>Fecha</th>
+										<th>Solicitante</th>
+                                        <th>Tipo</th>
+                                        <th>Historial de seguimiento</th>
+                                        <th>Historial de documentos</th>  
+										<th>Notificación a involucrados</th> 
+                                        <th>Estado</th>
+                                    </tr>
+                                </thead>
+				<tr>
+									<td><a href="#"><i class="bi bi-file-earmark-pdf"></i>RBA-01</a><br /><br/>
+									</td>
+									<td>
+                                            01/01/2023<br/>
+											Trimestre: 23-I
+                                    </td>                                    
                                     <td><strong>JUAN ALVAREZ ROBLES</strong>
                                         <hr />
                                         LIC. EN PSICOLOGÍA BIOMÉDICA<br />
                                         1293847@correo.ler.uam.mx
                                     </td>
-                                    <td><strong>BUZÓN SERVICIOS</strong><br/><br/>SUGERENCIA<br/>CCV <br/> Portal Web 
+                                    <td><strong>COMENTARIO DE SERVICIO</strong><br/><br/>SUGERENCIA<br/>CCV <br/> Portal Web 
                                         </button>
                                     </td>
                                     <td class="text-center"><button class="btn btn-primary btn-sm" type="button"
@@ -317,11 +342,11 @@
                                             onclick="window.location='notificarInvolucrados.html'">
                                             Notificar
                                         </button></td>
-                                    <td class="text-center"></td>
-                                    <td class="text-center">
+                                      <td class="text-center">
                                         <strong>ATENDIDA</strong>
                                     </td>
                                 </tr>
+		
 		                        <tr>
 									<td><a href="#"><i class="bi bi-file-earmark-pdf"></i>RBA-01</a><br /><br/>
 									</td>
@@ -334,7 +359,7 @@
                                         LIC. EN PSICOLOGÍA BIOMÉDICA<br />
                                         1293847@correo.ler.uam.mx
                                     </td>
-                                    <td><strong>BUZÓN SERVICIOS</strong><br/><br/>QUEJA<br/>CRM <br/> ALIMENTOS
+                                    <td><strong>COMENTARIO DE SERVICIO</strong><br/><br/>QUEJA<br/>CRM <br/> ALIMENTOS
                                         </button>
                                     </td>
                                     <td class="text-center"><button class="btn btn-primary btn-sm" type="button"
@@ -349,7 +374,6 @@
                                             onclick="window.location='notificarInvolucrados.html'">
                                             Notificar
                                         </button></td>
-                                    <td class="text-center"></td>
                                     <td class="text-center">
                                         <strong>REGISTRADA</strong>
                                     </td>
@@ -382,7 +406,6 @@
                                             onclick="window.location='notificarInvolucrados.html'">
                                             Notificar
                                         </button></td>
-                                    <td class="text-center"></td>
                                     <td class="text-center">
                                         <strong>EN PROCESO</strong>
                                        
@@ -401,7 +424,7 @@
                                         LIC. EN PSICOLOGÍA BIOMÉDICA<br />
                                         1293847@correo.ler.uam.mx
                                     </td>
-                                    <td><strong>FALTA DE VIOLENCIA DE GÉNERO</strong>
+                                    <td><strong>QUEJA O EVENTUALIDAD DE VIOLENCIA DE GÉNERO</strong>
                                         </button>
                                     </td>
                                     <td class="text-center"><button class="btn btn-primary btn-sm" type="button"
@@ -416,8 +439,7 @@
                                             onclick="window.location='notificarInvolucrados.html'">
                                             Notificar
                                         </button></td>
-                                    <td class="text-center"></td>
-                                    <td class="text-center">
+                                     <td class="text-center">
                                         <strong>EN PROCESO</strong>
                                        
                                     </td>
