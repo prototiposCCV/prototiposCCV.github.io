@@ -66,9 +66,9 @@
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Registro</a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="../coordinadores/registroBuzonAyuda.html">Comentario o sugerencia u otro</a></li>
+                                        <li><a class="dropdown-item" href="../coordinadores/registroBuzonAyuda.html">Comentario de servicio</a></li>
                                         <li><a class="dropdown-item" href="../coordinadores/registroBuzonAyudaPsicologica.html">Ayuda psicológica</a></li>
-										<li><a class="dropdown-item" href="../coordinadores/registroBuzonQueja.html">Reportes de quejas o eventualidades de violencia de género</a></li>
+										<li><a class="dropdown-item" href="../coordinadores/registroBuzonQueja.html">Quejas o eventualidades de violencia de género</a></li>
                                     </ul>
                                 </li>
 								 <li class="nav-item dropdown">
@@ -115,16 +115,31 @@
                             <div class="col-md-6">
                                 <label for="tipo" class="form-label fw-bold">Tipo:</label>
                                 <select class="form-select form-control" required id="tipo">
-                                    <option>--</option>
-                                    <option>Comentario, sugerencia u otro</option>
+                                    <option>*</option>
+                                    <option>Comentario de servicio</option>
                                     <option>Ayuda psicológica</option>
-                                    <option>Reportes de quejas o eventualidades de violencia de género</option>                                   
+                                    <option>Reportes de quejas o eventualidades de violencia de género</option>                             
+									<option>Personales</option>
                                 </select>
                             </div>
-                            <div class="col-md-6">
+                            
+							<div class="col-md-6">
+                                <label for="trimestre" class="form-label fw-bold">Trimestre/Año:</label>
+                                <select class="form-select form-control" required id="trimestre">
+                                    <option>23</option>
+                                    <option>24</option>
+                                </select>
+								<select class="form-select form-control" required id="trimestre">
+                                    <option>*</option>
+                                    <option>I</option>
+                                    <option>O</option>
+									<option>P</option>
+                                </select>
+                            </div>
+							<div class="col-md-6">
                                 <label for="denunciada" class="form-label fw-bold">Tipo de Servicio:</label>
                                 <select class="form-select form-control" required id="tipo">
-                                    <option>--</option>
+                                    <option>*</option>
                                     <option>Desarrollo de sistemas</option>
                                     <option>Plataformas para aulas virtuales XAHNI y PADI</option>
 									<option>Aplicativo NADU 1,0</option>
@@ -134,20 +149,6 @@
 									<option>Sistema de Calidad</option>
                                 </select>
                             </div>
-							<div class="col-md-6">
-                                <label for="trimestre" class="form-label fw-bold">Trimestre/Año:</label>
-                                <select class="form-select form-control" required id="trimestre">
-                                    <option>23</option>
-                                    <option>24</option>
-                                </select>
-								<select class="form-select form-control" required id="trimestre">
-                                    <option>--</option>
-                                    <option>I</option>
-                                    <option>O</option>
-									<option>P</option>
-                                </select>
-                            </div>
-							
                             <div class="col-md-6">
                                 <button type="submit" class="btn btn-primary btn-sm btn-block">Buscar</button><br/>
                                 <label for="denunciada" class="form-label fst-italic mt-3">Se puede buscar por uno o más
@@ -184,6 +185,85 @@
                                 </thead>
                                 <tr>
 									<td><a href="#"><i class="bi bi-file-earmark-pdf"></i>RBA-01</a><br /><br/>
+											
+									</td>
+									<td>
+                                            01/01/2023<br/>
+											Trimestre: 23-I
+                                    </td>                                    
+                                    <td><strong>JUAN ALVAREZ ROBLES</strong>
+                                        <hr />
+                                        LIC. EN PSICOLOGÍA BIOMÉDICA<br />
+                                        1293847@correo.ler.uam.mx
+                                    </td>
+                                    <td><strong>COMETARIOS DE SERVICIOS</strong><br/><br/>SUGERENCIA<br/>CCV <br/> Portal Web 
+                                        </button>
+                                    </td>
+                                    <td class="text-center"><button class="btn btn-primary btn-sm" type="button"
+                                            onclick="window.location='registrarComentarioAdmon.html'">
+                                            Registrar comentario
+                                        </button></td>
+                                    <td class="text-center"><button class="btn btn-primary btn-sm" type="button"
+                                            onclick="window.location='accesoHistDoc.html'">
+                                            Acceso
+                                        </button></td>                                    
+                                    
+                                    <td class="text-center">
+                                        <strong>EN PROCESO</strong>
+                                        <button class="btn btn-primary btn-sm" type="button"
+                                            onclick="window.location='cambiarEstadoCoord.html'">
+                                            Cambiar estado
+                                        </button>
+                                    </td>
+                                </tr>
+						        <tr>
+									<td><a href="#"><i class="bi bi-file-earmark-pdf"></i>RBA-01</a><br /><br/>
+											
+									</td>
+									<td>
+                                            01/01/2023<br/>
+											Trimestre: 23-I
+                                    </td>                                    
+                                    <td><strong>JUAN ALVAREZ ROBLES</strong>
+                                        <hr />
+                                        LIC. EN PSICOLOGÍA BIOMÉDICA<br />
+                                        1293847@correo.ler.uam.mx
+                                    </td>
+                                    <td><strong>COMENTARIOS DE SERVICIOS</strong><br/><br/>SUGERENCIA<br/>CCV <br/> Portal Web 
+                                        </button>
+                                    </td>
+                                    <td class="text-center"><button class="btn btn-primary btn-sm" type="button"
+                                            onclick="window.location='registrarComentarioAdmon.html'">
+                                            Registrar comentario
+                                        </button></td>
+                                    <td class="text-center"><button class="btn btn-primary btn-sm" type="button"
+                                            onclick="window.location='accesoHistDoc.html'">
+                                            Acceso
+                                        </button></td>                                    
+                                    
+                                    <td class="text-center">
+                                        <strong>EN PROCESO</strong>
+                                        <button class="btn btn-primary btn-sm" type="button"
+                                            onclick="window.location='cambiarEstadoCoord.html'">
+                                            Cambiar estado
+                                        </button>
+                                    </td>
+                                </tr>
+				</table>
+			 <table class="table table-striped">
+                                <thead>
+                                    <tr align="center">
+                                        <th>Folio</th>
+										<th>Fecha</th>
+										<th>Solicitante</th>
+                                        <th>Tipo</th>
+                                        <th>Historial de seguimiento</th>
+                                        <th>Historial de documentos</th>  
+										<th>Estado</th>
+                                    </tr>
+                                </thead>
+						        <tr>
+									<td><a href="#"><i class="bi bi-file-earmark-pdf"></i>RBA-01</a><br /><br/>
 											<button class="btn btn-primary btn-sm" type="button"  onclick="window.location='editarBuzonQueja.html'">
                                                 Editar registro
                                             </button>
@@ -213,68 +293,7 @@
                                         <strong>EN PROCESO</strong>
                                     </td>
                                 </tr>
-						        <tr>
-									<td><a href="#"><i class="bi bi-file-earmark-pdf"></i>RBA-01</a><br /><br/>
-											
-									</td>
-									<td>
-                                            01/01/2023<br/>
-											Trimestre: 23-I
-                                    </td>                                    
-                                    <td><strong>JUAN ALVAREZ ROBLES</strong>
-                                        <hr />
-                                        LIC. EN PSICOLOGÍA BIOMÉDICA<br />
-                                        1293847@correo.ler.uam.mx
-                                    </td>
-                                    <td><strong>BUZÓN SERVICIOS</strong><br/><br/>SUGERENCIA<br/>CCV <br/> Portal Web 
-                                        </button>
-                                    </td>
-                                    <td class="text-center"><button class="btn btn-primary btn-sm" type="button"
-                                            onclick="window.location='registrarComentarioAdmon.html'">
-                                            Registrar comentario
-                                        </button></td>
-                                    <td class="text-center"><button class="btn btn-primary btn-sm" type="button"
-                                            onclick="window.location='accesoHistDoc.html'">
-                                            Acceso
-                                        </button></td>                                    
-                                    
-                                    <td class="text-center">
-                                        <strong>EN PROCESO</strong>
-                                        <button class="btn btn-primary btn-sm" type="button"
-                                            onclick="window.location='cambiarEstadoCoord.html'">
-                                            Cambiar estado
-                                        </button>
-                                    </td>
-                                </tr>
-				                <tr>
-									<td><a href="#"><i class="bi bi-file-earmark-pdf"></i>RBA-01</a><br /><br/>
-											
-									</td>
-									<td>
-                                            01/01/2023<br/>
-											Trimestre: 23-I
-                                    </td>                                    
-                                    <td><strong>MÓNICA IRENE SILVA LÓPEZ</strong>
-                                        <hr />
-                                        ENCARGADA DE LA COORDINACIÓN DE CAMPUS VIRTUAL<br />
-                                        msilva@correo.ler.uam.mx
-                                    </td>
-                                    <td><strong>BUZÓN SERVICIOS</strong><br/><br/>SUGERENCIA<br/>CRM <br/> Vigilancia 
-                                        </button>
-                                    </td>
-                                    <td class="text-center"><button class="btn btn-primary btn-sm" type="button"
-                                            onclick="window.location='registrarComentarioAdmon.html'">
-                                            Registrar comentario
-                                        </button></td>
-                                    <td class="text-center"><button class="btn btn-primary btn-sm" type="button"
-                                            onclick="window.location='accesoHistDoc.html'">
-                                            Acceso
-                                        </button></td>                                    
-                                    
-                                    <td class="text-center">
-                                        <strong>ATENDIDA</strong>
-                                    </td>
-                                </tr>
+				                
 				                <tr>
 									<td><a href="#"><i class="bi bi-file-earmark-pdf"></i>RBA-01</a><br /><br/>
 											<button class="btn btn-primary btn-sm" type="button"  onclick="window.location='editarBuzonAyuda.html'">
@@ -308,20 +327,17 @@
                                 </tr>
 				                <tr>
 									<td><a href="#"><i class="bi bi-file-earmark-pdf"></i>RBA-01</a><br /><br/>
-											<button class="btn btn-primary btn-sm" type="button"  onclick="window.location='editarBuzonAyudaPsicologica.html'">
-                                                Editar registro
-                                            </button>
+											
 									</td>
 									<td>
                                             01/01/2023<br/>
 											Trimestre: 23-I
                                     </td>                                    
-                                    <td><strong>MÓNICA IRENE SILVA LÓPEZ</strong>
+                                    <td><strong>EMPLEADO</strong>
                                         <hr />
-                                        ENCARGADA DE LA COORD DE CAMPUS VITRUAL<br />
-                                        msilva@correo.ler.uam.mx
+                                       
                                     </td>
-                                    <td><strong>FALTA: PROVEEDOR DE SERVICIOS</strong>
+                                    <td><strong>COMENTARIO SE SERVICIO</strong><br/>-SUGERENCIA<br/>-CRM <br/>-Vigilancia 
                                         </button>
                                     </td>
                                     <td class="text-center"><button class="btn btn-primary btn-sm" type="button"
@@ -332,9 +348,9 @@
                                             onclick="window.location='accesoHistDoc.html'">
                                             Acceso
                                         </button></td>                                    
-                                   
+                                    
                                     <td class="text-center">
-                                        <strong>EN PROCESO</strong>                                       
+                                        <strong>ATENDIDA</strong>
                                     </td>
                                 </tr>
                             </table>
