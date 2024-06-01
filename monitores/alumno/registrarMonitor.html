@@ -132,16 +132,12 @@
                 <div class="border border-warning rounded-2" id="esEgresado">
 					
                     <label for="creditosCursados" class="form-label mt-3 fw-bold">Créditos cursados hasta el momento<sup
-                            style="color: red; font-size: small;">*</sup>:</label>
+                            style="color: red; font-size: small;">*</sup>:</label><span class="fst-italic fw-lighter link-warning">Estos datos se solicitarán a CSE del AGA y el sistema valida que cumpla con los criterios en rojo</span>
                     <input type="number" class="form-control form-text" id="creditosCursados" required>
-                    <label for="creditosInscritos" class="form-label mt-3 fw-bold">Créditos inscritos este trimestre | UUEEAAs inscritas este trimestre<sup
-                            style="color: red; font-size: small;">*</sup>:</label>
+                    <label for="creditosInscritos" class="form-label mt-3 fw-bold">Créditos inscritos este trimestre | UEA inscritas este trimestre<sup
+                            style="color: red; font-size: small;">*</sup>:</label><span class="fst-italic fw-lighter link-warning">Estos datos se solicitarán a CSE del AGA y el sistema valida que cumpla con los criterios en rojo</span>
                     <input type="number" class="form-control form-text" id="creditosInscritos" required>
-                    <div class="form-check form-check-inline my-3">
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="trimestreAnterior">
-                        <label class="form-check-label fw-bold" for="trimestreAnterior">Cursé UUEEAAs el trimestre
-                            anterior</label>
-                    </div><br />
+                    <br />
                     <span class="fst-italic fw-lighter link-danger">Estos datos se solicitan sólo en las categorías <b>Pantera negra</b> o <b>Impulsor</b> y se valida que:
                         <ul>
                             <li>Pantera Negra tenga un avance mínimo de 50% de los créditos del plan de estudios correspondiente</li>
@@ -151,6 +147,12 @@
                             <li>Para posgrado validar que al menos tenga una unidad de enseñanza-aprendizaje en el trimestre donde se realiza la solicitud</li>                            
                         </ul></span>
                 </div>
+
+                <div class="form-check form-check-inline my-3">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="trimestreAnterior">
+                    <label class="form-check-label fw-bold" for="trimestreAnterior">Cursé UEA el trimestre
+                        anterior</label><span class="fst-italic fw-lighter link-warning">Estos datos se solicitarán a CSE del AGA, si no se cursó UEA el trimestre anterior no se permitirá el registro</span>
+                </div><br/>
 				<label for="zona" class="form-label mt-3 fw-bold">Proyecto
 						<sup style="color: red; font-size: small;">*</sup>:
                         </label>
