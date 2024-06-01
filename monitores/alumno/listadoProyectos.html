@@ -188,7 +188,7 @@
                         <td>PANTERA NEGRA</td>
                         <td>Ajustes en Informe de Actividades</td>
 						<td><a href="#">Informe actividades parcial 1 <i class="bi bi-file-earmark-pdf"></i></a></td>
-                        <td><button type="button" class="btn btn-outline-primary" onclick="window.location.href='./entregarInforme.html'">Registrar Informe de Actividades</button></td>
+                        <td><button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="window.location.href='llenarEncuesta.html'">Evalúa tu experiencia</button><div class="fst-italic fw-lighter link-danger">No se podrán realizar más acciones hasta que se haya llenado la encuesta</div></td>
                       </tr>
 					  <tr>                       
                         <td>PMU 02 <a href="./SecuenciasDidactivasProdEducativa.pdf" target="_blank"><i class="bi bi-file-earmark-pdf"></i></a></td>
@@ -262,14 +262,19 @@
         </div>
     </div>
     <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="aviso" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="false">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Muchas gracias, el proyecto será valorado por el Comité Evaluador.</h1>                    
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Recuerda que es muy importante cumplir con las fechas de entrega de tus reportes.</h1>                    
                 </div>
                 <div class="modal-body">
-                    Recibirá un correo con un resumen de su registro.
+                    <b>Fecha de inicio de las actividades:</b> 3 de junio de 2024<br/>
+                    <b>Fecha de finalización de las actividades:</b> 6 de septiembre de 2024<br/><br/>
+                    FECHAS DE REPORTES DE ACTIVIDADES<br/>
+                    <b>Fecha para el reporte parcial 1:</b> 1 de julio de 2024<br/>
+                    <b>Fecha para el reporte parcial 2:</b> 5 de agosto de 2024<br/>
+                    <b>Fecha para el reporte final:</b> 6 de septiembre de 2024
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
@@ -277,6 +282,15 @@
             </div>
         </div>
     </div>
+
+    <button id="mostrarModal" class="btn btn-primary btn-sm" type="submit" data-bs-toggle="modal"
+        data-bs-target="#aviso" style="visibility: hidden;" >
+        Mostrar modal
+    </button>
+
+    <script type="text/javascript">
+        document.getElementById('mostrarModal').click()
+    </script>
 
 
 </body>
